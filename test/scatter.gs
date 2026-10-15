@@ -1,0 +1,10 @@
+'reinit'
+'open precip_ind.ctl'
+'open sst_ano.ctl'
+
+'set x 1'
+'set y 1'
+'set z 1'
+'set t 1 last'
+'set gxout scatter'
+'d ind.1;enso.2'

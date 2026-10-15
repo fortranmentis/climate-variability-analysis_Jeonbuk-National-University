@@ -1,0 +1,6 @@
+'reinit'
+'open correlogram.ctl'
+'set t 1 last'
+'set xlabs -48 |-36 |-24 |-12 |0 |12 |24 |36 |48'
+'d co'
+'d maskout(co,0.05-prob)'

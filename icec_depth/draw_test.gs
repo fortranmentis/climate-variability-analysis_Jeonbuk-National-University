@@ -1,0 +1,25 @@
+'reinit'
+
+'open reg_snowdepth_air-8.ctl'
+'set grads off'
+
+'set lon 0 360'
+'set lat 50 90'
+'set z 1'
+'set t 1'
+'set gxout contour'
+'set mproj nps'
+
+'set cthick 2'
+'set clab masked'
+'set ccolor 1'
+'set clopts 1 10 0.1'
+'set cint 0.001'
+'d corr'
+
+'set cstyle 1'
+'set cint 0.015'
+'set cthick 8'
+'set ccolor 3'
+'set clopts 1 12 0.12'
+'d maskout(corr,0.1-prob)'

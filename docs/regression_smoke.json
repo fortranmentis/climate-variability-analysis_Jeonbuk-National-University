@@ -1,0 +1,9 @@
+{
+  "compiler": "GNU Fortran (tdm64-1) 10.3.0",
+  "compile_exit_code": 0,
+  "compile_stderr": "",
+  "run_exit_code": 0,
+  "stdout": " Regression      probability\n   6.73314047       5.26655605E-03\n",
+  "stderr": "",
+  "compile_flags": "-O0 -fcheck=all -static"
+}

@@ -1,0 +1,5 @@
+'reinit'
+'open  correlogram.ctl'
+'set t 1 last'
+'d co'
+'d maskout(co,0.05-prob)' 

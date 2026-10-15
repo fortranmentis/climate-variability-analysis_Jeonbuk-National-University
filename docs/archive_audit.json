@@ -1,0 +1,198 @@
+{
+  "original_files": 2160,
+  "original_bytes": 5719476216,
+  "published_archive_files": 2126,
+  "published_archive_bytes": 5718398120,
+  "excluded_transient_files": 34,
+  "extensions": {
+    "": 1,
+    ".asc": 22,
+    ".ctl": 613,
+    ".dbf": 4,
+    ".f90": 49,
+    ".fwrite": 1,
+    ".gdat": 872,
+    ".gs": 231,
+    ".gsf": 1,
+    ".gz": 4,
+    ".m": 9,
+    ".nc": 28,
+    ".new": 1,
+    ".png": 261,
+    ".prj": 4,
+    ".shp": 4,
+    ".shx": 4,
+    ".txt": 13,
+    ".xlsx": 4
+  },
+  "ctl_reference_status": {
+    "present": 613
+  },
+  "netcdf_status": {
+    "unsupported_header": 13,
+    "header_read": 15
+  },
+  "absolute_home_path_lines": [
+    {
+      "path": "auto_correlation/mk_Nino_index.gs",
+      "line": 2
+    },
+    {
+      "path": "composite/mk_data_sst.gs",
+      "line": 2
+    },
+    {
+      "path": "EOF/mk_Nino_index.gs",
+      "line": 2
+    },
+    {
+      "path": "FInal/mk_olr.gs",
+      "line": 2
+    },
+    {
+      "path": "FInal/mk_olr2.gs",
+      "line": 2
+    },
+    {
+      "path": "FInal/mk_precip.gs",
+      "line": 2
+    },
+    {
+      "path": "FInal/mk_precip2.gs",
+      "line": 2
+    },
+    {
+      "path": "FInal/mk_salt.gs",
+      "line": 2
+    },
+    {
+      "path": "FInal/mk_soilw.gs",
+      "line": 2
+    },
+    {
+      "path": "FInal/mk_sst.gs",
+      "line": 2
+    },
+    {
+      "path": "FInal/mk_sst2.gs",
+      "line": 2
+    },
+    {
+      "path": "FInal/TEST2.gs",
+      "line": 2
+    },
+    {
+      "path": "FInal/TEST3.gs",
+      "line": 2
+    },
+    {
+      "path": "FInal/TEST4.gs",
+      "line": 2
+    },
+    {
+      "path": "FInal/TEST5.gs",
+      "line": 2
+    },
+    {
+      "path": "gisang/make_data_sst.gs",
+      "line": 2
+    },
+    {
+      "path": "homework/mk_precip.gs",
+      "line": 2
+    },
+    {
+      "path": "homework/TEST1.gs",
+      "line": 2
+    },
+    {
+      "path": "homework2/mk_precip.gs",
+      "line": 2
+    },
+    {
+      "path": "homework2/TEST1.gs",
+      "line": 2
+    },
+    {
+      "path": "homework_3/make_data_slp.gs",
+      "line": 2
+    },
+    {
+      "path": "JFM/draw3.gs",
+      "line": 2
+    },
+    {
+      "path": "JFM/draw3.gs",
+      "line": 3
+    },
+    {
+      "path": "JFM/draw3.gs",
+      "line": 4
+    },
+    {
+      "path": "JFM/draw3.gs",
+      "line": 5
+    },
+    {
+      "path": "JFM/draw3.gs",
+      "line": 6
+    },
+    {
+      "path": "mean/draw_ENSO_anomaly.gs",
+      "line": 2
+    },
+    {
+      "path": "mean/draw_mean.gs",
+      "line": 2
+    },
+    {
+      "path": "mean/draw_mean_precip.gs",
+      "line": 2
+    },
+    {
+      "path": "mean/draw_seasonal_climatology.gs",
+      "line": 2
+    },
+    {
+      "path": "mean/TEST2.gs",
+      "line": 2
+    },
+    {
+      "path": "mean/TEST2.gs",
+      "line": 3
+    },
+    {
+      "path": "mean/TEST2.gs",
+      "line": 4
+    },
+    {
+      "path": "mean/TEST3.gs",
+      "line": 2
+    },
+    {
+      "path": "partial_regression/make_data_slp.gs",
+      "line": 2
+    },
+    {
+      "path": "regression/make_data_sst.gs",
+      "line": 2
+    },
+    {
+      "path": "regression/mk_Nino_index.gs",
+      "line": 2
+    },
+    {
+      "path": "test/mk_precip.gs",
+      "line": 2
+    },
+    {
+      "path": "test/mk_sst.gs",
+      "line": 2
+    },
+    {
+      "path": "test/zonal_tem.gs",
+      "line": 2
+    }
+  ],
+  "scope": "File hashes, descriptor paths, and NetCDF headers only; no scientific validation."
+}

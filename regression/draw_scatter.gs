@@ -1,0 +1,10 @@
+'reinit'
+'open Nino_index_NDJ_1982-2018.ctl'
+'open precip_Jeonju_DEC_1982-2018.ctl'
+
+'set x 1'
+'set y 1'
+'set z 1'
+'set time dec1982 dec2018'
+'set gxout scatter'
+'d nino.1;ind.2'

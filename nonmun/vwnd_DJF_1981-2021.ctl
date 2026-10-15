@@ -1,0 +1,10 @@
+                    DSET ^vwnd_DJF_1981-2021.gdat
+TITLE vwnd_DJF
+UNDEF    -0.99900E+09
+XDEF 144 LINEAR  1.25 2.5
+YDEF  73 LINEAR  -88.75 2.5
+ZDEF   1 LINEAR   1. 1.
+TDEF   1  LINEAR 01JAN0001      1yr
+VARS  1
+sanom 1 1  vwnd_DJF
+ENDVARS

@@ -1,0 +1,2337 @@
+{
+  "2001geo/hgt.mon.mean.nc": {
+    "format": "89484446",
+    "status": "unsupported_header"
+  },
+  "2001sst/sst.mnmean.nc": {
+    "format": "CDF-1",
+    "status": "header_read",
+    "records": 472,
+    "dimensions": [
+      {
+        "name": "lat",
+        "size": 180
+      },
+      {
+        "name": "lon",
+        "size": 360
+      },
+      {
+        "name": "time",
+        "size": 0
+      },
+      {
+        "name": "nbnds",
+        "size": 2
+      }
+    ],
+    "global_attributes": {
+      "title": "NOAA Optimum Interpolation (OI) SST V2",
+      "Conventions": "CF-1.0",
+      "history": "Wed Apr  6 13:47:45 2005: ncks -d time,0,278 SAVEs/sst.mnmean.nc sst.mnmean.nc\nCreated 10/2002 by RHS",
+      "comments": "Data described in  Reynolds, R.W., N.A. Rayner, T.M.\nSmith, D.C. Stokes, and W. Wang, 2002: An Improved In Situ and Satellite\nSST Analysis for Climate, J. Climate",
+      "platform": "Model",
+      "source": "NCEP Climate Modeling Branch",
+      "institution": "National Centers for Environmental Prediction",
+      "References": "https://www.psl.noaa.gov/data/gridded/data.noaa.oisst.v2.html",
+      "dataset_title": "NOAA Optimum Interpolation (OI) SST V2",
+      "source_url": "http://www.emc.ncep.noaa.gov/research/cmb/sst_analysis/"
+    },
+    "variables": [
+      {
+        "name": "lat",
+        "dimensions": [
+          "lat"
+        ],
+        "type": 5,
+        "stored_bytes": 720,
+        "offset": 2524,
+        "attributes": {
+          "units": "degrees_north",
+          "long_name": "Latitude",
+          "actual_range": [
+            89.5,
+            -89.5
+          ],
+          "standard_name": "latitude",
+          "axis": "Y",
+          "coordinate_defines": "center"
+        }
+      },
+      {
+        "name": "lon",
+        "dimensions": [
+          "lon"
+        ],
+        "type": 5,
+        "stored_bytes": 1440,
+        "offset": 3244,
+        "attributes": {
+          "units": "degrees_east",
+          "long_name": "Longitude",
+          "actual_range": [
+            0.5,
+            359.5
+          ],
+          "standard_name": "longitude",
+          "axis": "X",
+          "coordinate_defines": "center"
+        }
+      },
+      {
+        "name": "sst",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": 3,
+        "stored_bytes": 129600,
+        "offset": 4684,
+        "attributes": {
+          "long_name": "Monthly Mean of Sea Surface Temperature",
+          "unpacked_valid_range": [
+            -5.0,
+            40.0
+          ],
+          "actual_range": [
+            -1.7999995946884155,
+            35.56861877441406
+          ],
+          "units": "degC",
+          "add_offset": 0.0,
+          "scale_factor": 0.009999999776482582,
+          "missing_value": 32767,
+          "precision": 2,
+          "least_significant_digit": 2,
+          "var_desc": "Sea Surface Temperature",
+          "dataset": "NOAA Optimum Interpolation (OI) SST V2",
+          "level_desc": "Surface",
+          "statistic": "Mean",
+          "parent_stat": "Weekly Mean",
+          "standard_name": "sea_surface_temperature",
+          "cell_methods": "time: mean (monthly from weekly values interpolated to daily)",
+          "valid_range": [
+            -500,
+            4000
+          ]
+        }
+      },
+      {
+        "name": "time",
+        "dimensions": [
+          "time"
+        ],
+        "type": 6,
+        "stored_bytes": 8,
+        "offset": 134284,
+        "attributes": {
+          "units": "days since 1800-1-1 00:00:00",
+          "long_name": "Time",
+          "actual_range": [
+            66443.0,
+            80778.0
+          ],
+          "delta_t": "0000-01-00 00:00:00",
+          "avg_period": "0000-01-00 00:00:00",
+          "prev_avg_period": "0000-00-07 00:00:00",
+          "standard_name": "time",
+          "axis": "T",
+          "bounds": "time_bnds"
+        }
+      },
+      {
+        "name": "time_bnds",
+        "dimensions": [
+          "time",
+          "nbnds"
+        ],
+        "type": 6,
+        "stored_bytes": 16,
+        "offset": 134292,
+        "attributes": {
+          "long_name": "Time Boundaries"
+        }
+      }
+    ]
+  },
+  "correlation/wspd.mon.mean.nc": {
+    "format": "89484446",
+    "status": "unsupported_header"
+  },
+  "Data/precip.mon.mean.nc": {
+    "format": "89484446",
+    "status": "unsupported_header"
+  },
+  "Data/sst.mnmean.nc": {
+    "format": "CDF-1",
+    "status": "header_read",
+    "records": 465,
+    "dimensions": [
+      {
+        "name": "lat",
+        "size": 180
+      },
+      {
+        "name": "lon",
+        "size": 360
+      },
+      {
+        "name": "time",
+        "size": 0
+      },
+      {
+        "name": "nbnds",
+        "size": 2
+      }
+    ],
+    "global_attributes": {
+      "title": "NOAA Optimum Interpolation (OI) SST V2",
+      "Conventions": "CF-1.0",
+      "history": "Wed Apr  6 13:47:45 2005: ncks -d time,0,278 SAVEs/sst.mnmean.nc sst.mnmean.nc\nCreated 10/2002 by RHS",
+      "comments": "Data described in  Reynolds, R.W., N.A. Rayner, T.M.\nSmith, D.C. Stokes, and W. Wang, 2002: An Improved In Situ and Satellite\nSST Analysis for Climate, J. Climate",
+      "platform": "Model",
+      "source": "NCEP Climate Modeling Branch",
+      "institution": "National Centers for Environmental Prediction",
+      "References": "https://www.psl.noaa.gov/data/gridded/data.noaa.oisst.v2.html",
+      "dataset_title": "NOAA Optimum Interpolation (OI) SST V2",
+      "source_url": "http://www.emc.ncep.noaa.gov/research/cmb/sst_analysis/"
+    },
+    "variables": [
+      {
+        "name": "lat",
+        "dimensions": [
+          "lat"
+        ],
+        "type": 5,
+        "stored_bytes": 720,
+        "offset": 2524,
+        "attributes": {
+          "units": "degrees_north",
+          "long_name": "Latitude",
+          "actual_range": [
+            89.5,
+            -89.5
+          ],
+          "standard_name": "latitude",
+          "axis": "Y",
+          "coordinate_defines": "center"
+        }
+      },
+      {
+        "name": "lon",
+        "dimensions": [
+          "lon"
+        ],
+        "type": 5,
+        "stored_bytes": 1440,
+        "offset": 3244,
+        "attributes": {
+          "units": "degrees_east",
+          "long_name": "Longitude",
+          "actual_range": [
+            0.5,
+            359.5
+          ],
+          "standard_name": "longitude",
+          "axis": "X",
+          "coordinate_defines": "center"
+        }
+      },
+      {
+        "name": "sst",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": 3,
+        "stored_bytes": 129600,
+        "offset": 4684,
+        "attributes": {
+          "long_name": "Monthly Mean of Sea Surface Temperature",
+          "unpacked_valid_range": [
+            -5.0,
+            40.0
+          ],
+          "actual_range": [
+            -1.7999995946884155,
+            35.56861877441406
+          ],
+          "units": "degC",
+          "add_offset": 0.0,
+          "scale_factor": 0.009999999776482582,
+          "missing_value": 32767,
+          "precision": 2,
+          "least_significant_digit": 2,
+          "var_desc": "Sea Surface Temperature",
+          "dataset": "NOAA Optimum Interpolation (OI) SST V2",
+          "level_desc": "Surface",
+          "statistic": "Mean",
+          "parent_stat": "Weekly Mean",
+          "standard_name": "sea_surface_temperature",
+          "cell_methods": "time: mean (monthly from weekly values interpolated to daily)",
+          "valid_range": [
+            -500,
+            4000
+          ]
+        }
+      },
+      {
+        "name": "time",
+        "dimensions": [
+          "time"
+        ],
+        "type": 6,
+        "stored_bytes": 8,
+        "offset": 134284,
+        "attributes": {
+          "units": "days since 1800-1-1 00:00:00",
+          "long_name": "Time",
+          "actual_range": [
+            66443.0,
+            80566.0
+          ],
+          "delta_t": "0000-01-00 00:00:00",
+          "avg_period": "0000-01-00 00:00:00",
+          "prev_avg_period": "0000-00-07 00:00:00",
+          "standard_name": "time",
+          "axis": "T",
+          "bounds": "time_bnds"
+        }
+      },
+      {
+        "name": "time_bnds",
+        "dimensions": [
+          "time",
+          "nbnds"
+        ],
+        "type": 6,
+        "stored_bytes": 16,
+        "offset": 134292,
+        "attributes": {
+          "long_name": "Time Boundaries"
+        }
+      }
+    ]
+  },
+  "Data/uwnd.mon.mean.nc": {
+    "format": "89484446",
+    "status": "unsupported_header"
+  },
+  "Data/vwnd.mon.mean.nc": {
+    "format": "89484446",
+    "status": "unsupported_header"
+  },
+  "FInal/olr.mon.mean.nc": {
+    "format": "89484446",
+    "status": "unsupported_header"
+  },
+  "FInal/precip.mon.mean.nc": {
+    "format": "89484446",
+    "status": "unsupported_header"
+  },
+  "FInal/soilw.mon.mean.v2.nc": {
+    "format": "89484446",
+    "status": "unsupported_header"
+  },
+  "FInal/soilw_1deg.nc": {
+    "format": "89484446",
+    "status": "unsupported_header"
+  },
+  "FInal/sst.mnmean.nc": {
+    "format": "CDF-1",
+    "status": "header_read",
+    "records": 465,
+    "dimensions": [
+      {
+        "name": "lat",
+        "size": 180
+      },
+      {
+        "name": "lon",
+        "size": 360
+      },
+      {
+        "name": "time",
+        "size": 0
+      },
+      {
+        "name": "nbnds",
+        "size": 2
+      }
+    ],
+    "global_attributes": {
+      "title": "NOAA Optimum Interpolation (OI) SST V2",
+      "Conventions": "CF-1.0",
+      "history": "Wed Apr  6 13:47:45 2005: ncks -d time,0,278 SAVEs/sst.mnmean.nc sst.mnmean.nc\nCreated 10/2002 by RHS",
+      "comments": "Data described in  Reynolds, R.W., N.A. Rayner, T.M.\nSmith, D.C. Stokes, and W. Wang, 2002: An Improved In Situ and Satellite\nSST Analysis for Climate, J. Climate",
+      "platform": "Model",
+      "source": "NCEP Climate Modeling Branch",
+      "institution": "National Centers for Environmental Prediction",
+      "References": "https://www.psl.noaa.gov/data/gridded/data.noaa.oisst.v2.html",
+      "dataset_title": "NOAA Optimum Interpolation (OI) SST V2",
+      "source_url": "http://www.emc.ncep.noaa.gov/research/cmb/sst_analysis/"
+    },
+    "variables": [
+      {
+        "name": "lat",
+        "dimensions": [
+          "lat"
+        ],
+        "type": 5,
+        "stored_bytes": 720,
+        "offset": 2524,
+        "attributes": {
+          "units": "degrees_north",
+          "long_name": "Latitude",
+          "actual_range": [
+            89.5,
+            -89.5
+          ],
+          "standard_name": "latitude",
+          "axis": "Y",
+          "coordinate_defines": "center"
+        }
+      },
+      {
+        "name": "lon",
+        "dimensions": [
+          "lon"
+        ],
+        "type": 5,
+        "stored_bytes": 1440,
+        "offset": 3244,
+        "attributes": {
+          "units": "degrees_east",
+          "long_name": "Longitude",
+          "actual_range": [
+            0.5,
+            359.5
+          ],
+          "standard_name": "longitude",
+          "axis": "X",
+          "coordinate_defines": "center"
+        }
+      },
+      {
+        "name": "sst",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": 3,
+        "stored_bytes": 129600,
+        "offset": 4684,
+        "attributes": {
+          "long_name": "Monthly Mean of Sea Surface Temperature",
+          "unpacked_valid_range": [
+            -5.0,
+            40.0
+          ],
+          "actual_range": [
+            -1.7999995946884155,
+            35.56861877441406
+          ],
+          "units": "degC",
+          "add_offset": 0.0,
+          "scale_factor": 0.009999999776482582,
+          "missing_value": 32767,
+          "precision": 2,
+          "least_significant_digit": 2,
+          "var_desc": "Sea Surface Temperature",
+          "dataset": "NOAA Optimum Interpolation (OI) SST V2",
+          "level_desc": "Surface",
+          "statistic": "Mean",
+          "parent_stat": "Weekly Mean",
+          "standard_name": "sea_surface_temperature",
+          "cell_methods": "time: mean (monthly from weekly values interpolated to daily)",
+          "valid_range": [
+            -500,
+            4000
+          ]
+        }
+      },
+      {
+        "name": "time",
+        "dimensions": [
+          "time"
+        ],
+        "type": 6,
+        "stored_bytes": 8,
+        "offset": 134284,
+        "attributes": {
+          "units": "days since 1800-1-1 00:00:00",
+          "long_name": "Time",
+          "actual_range": [
+            66443.0,
+            80566.0
+          ],
+          "delta_t": "0000-01-00 00:00:00",
+          "avg_period": "0000-01-00 00:00:00",
+          "prev_avg_period": "0000-00-07 00:00:00",
+          "standard_name": "time",
+          "axis": "T",
+          "bounds": "time_bnds"
+        }
+      },
+      {
+        "name": "time_bnds",
+        "dimensions": [
+          "time",
+          "nbnds"
+        ],
+        "type": 6,
+        "stored_bytes": 16,
+        "offset": 134292,
+        "attributes": {
+          "long_name": "Time Boundaries"
+        }
+      }
+    ]
+  },
+  "gisang/sst.mnmean.nc": {
+    "format": "CDF-1",
+    "status": "header_read",
+    "records": 472,
+    "dimensions": [
+      {
+        "name": "lat",
+        "size": 180
+      },
+      {
+        "name": "lon",
+        "size": 360
+      },
+      {
+        "name": "time",
+        "size": 0
+      },
+      {
+        "name": "nbnds",
+        "size": 2
+      }
+    ],
+    "global_attributes": {
+      "title": "NOAA Optimum Interpolation (OI) SST V2",
+      "Conventions": "CF-1.0",
+      "history": "Wed Apr  6 13:47:45 2005: ncks -d time,0,278 SAVEs/sst.mnmean.nc sst.mnmean.nc\nCreated 10/2002 by RHS",
+      "comments": "Data described in  Reynolds, R.W., N.A. Rayner, T.M.\nSmith, D.C. Stokes, and W. Wang, 2002: An Improved In Situ and Satellite\nSST Analysis for Climate, J. Climate",
+      "platform": "Model",
+      "source": "NCEP Climate Modeling Branch",
+      "institution": "National Centers for Environmental Prediction",
+      "References": "https://www.psl.noaa.gov/data/gridded/data.noaa.oisst.v2.html",
+      "dataset_title": "NOAA Optimum Interpolation (OI) SST V2",
+      "source_url": "http://www.emc.ncep.noaa.gov/research/cmb/sst_analysis/"
+    },
+    "variables": [
+      {
+        "name": "lat",
+        "dimensions": [
+          "lat"
+        ],
+        "type": 5,
+        "stored_bytes": 720,
+        "offset": 2524,
+        "attributes": {
+          "units": "degrees_north",
+          "long_name": "Latitude",
+          "actual_range": [
+            89.5,
+            -89.5
+          ],
+          "standard_name": "latitude",
+          "axis": "Y",
+          "coordinate_defines": "center"
+        }
+      },
+      {
+        "name": "lon",
+        "dimensions": [
+          "lon"
+        ],
+        "type": 5,
+        "stored_bytes": 1440,
+        "offset": 3244,
+        "attributes": {
+          "units": "degrees_east",
+          "long_name": "Longitude",
+          "actual_range": [
+            0.5,
+            359.5
+          ],
+          "standard_name": "longitude",
+          "axis": "X",
+          "coordinate_defines": "center"
+        }
+      },
+      {
+        "name": "sst",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": 3,
+        "stored_bytes": 129600,
+        "offset": 4684,
+        "attributes": {
+          "long_name": "Monthly Mean of Sea Surface Temperature",
+          "unpacked_valid_range": [
+            -5.0,
+            40.0
+          ],
+          "actual_range": [
+            -1.7999995946884155,
+            35.56861877441406
+          ],
+          "units": "degC",
+          "add_offset": 0.0,
+          "scale_factor": 0.009999999776482582,
+          "missing_value": 32767,
+          "precision": 2,
+          "least_significant_digit": 2,
+          "var_desc": "Sea Surface Temperature",
+          "dataset": "NOAA Optimum Interpolation (OI) SST V2",
+          "level_desc": "Surface",
+          "statistic": "Mean",
+          "parent_stat": "Weekly Mean",
+          "standard_name": "sea_surface_temperature",
+          "cell_methods": "time: mean (monthly from weekly values interpolated to daily)",
+          "valid_range": [
+            -500,
+            4000
+          ]
+        }
+      },
+      {
+        "name": "time",
+        "dimensions": [
+          "time"
+        ],
+        "type": 6,
+        "stored_bytes": 8,
+        "offset": 134284,
+        "attributes": {
+          "units": "days since 1800-1-1 00:00:00",
+          "long_name": "Time",
+          "actual_range": [
+            66443.0,
+            80778.0
+          ],
+          "delta_t": "0000-01-00 00:00:00",
+          "avg_period": "0000-01-00 00:00:00",
+          "prev_avg_period": "0000-00-07 00:00:00",
+          "standard_name": "time",
+          "axis": "T",
+          "bounds": "time_bnds"
+        }
+      },
+      {
+        "name": "time_bnds",
+        "dimensions": [
+          "time",
+          "nbnds"
+        ],
+        "type": 6,
+        "stored_bytes": 16,
+        "offset": 134292,
+        "attributes": {
+          "long_name": "Time Boundaries"
+        }
+      }
+    ]
+  },
+  "icec/icec.mnmean.nc": {
+    "format": "CDF-1",
+    "status": "header_read",
+    "records": 475,
+    "dimensions": [
+      {
+        "name": "time",
+        "size": 0
+      },
+      {
+        "name": "lat",
+        "size": 180
+      },
+      {
+        "name": "lon",
+        "size": 360
+      },
+      {
+        "name": "nbnds",
+        "size": 2
+      }
+    ],
+    "global_attributes": {
+      "title": "NOAA Optimum Interpolation (OI) SST V2",
+      "Conventions": "CF-1.0",
+      "history": "Wed Apr  6 13:51:42 2005: ncks -d time,0,278 SAVEs/icec.mnmean.nc icec.mnmean.nc\nCreated 10/2002 by RHS\nN.B. The land values in this ice concentration data set have been set to the missing value of 32767.  The land values vary with time.",
+      "comments": "Data described in  Reynolds, R.W., N.A. Rayner, T.M.\nSmith, D.C. Stokes, and W. Wang, 2002: An Improved In Situ and Satellite\nSST Analysis for Climate, J. Climate",
+      "platform": "Model",
+      "source": "NCEP Climate Modeling Branch",
+      "institution": "National Centers for Environmental Prediction",
+      "References": "https://www.psl.noaa.gov/data/gridded/data.noaa.oisst.v2.html",
+      "NCO": "4.0.0",
+      "dataset_title": "NOAA Optimum Interpolation (OI) SST V2",
+      "source_url": "http://www.emc.ncep.noaa.gov/research/cmb/sst_analysis/"
+    },
+    "variables": [
+      {
+        "name": "icec",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": 3,
+        "stored_bytes": 129600,
+        "offset": 4784,
+        "attributes": {
+          "long_name": "Monthly Means of Ice Concentration",
+          "unpacked_valid_range": [
+            0.0,
+            100.0
+          ],
+          "actual_range": [
+            0.0,
+            122.0
+          ],
+          "units": "%",
+          "add_offset": 327.6499938964844,
+          "scale_factor": 0.009999999776482582,
+          "missing_value": 32767,
+          "precision": 2,
+          "least_significant_digit": 2,
+          "var_desc": "Ice Concentration",
+          "dataset": "NOAA Optimum Interpolation (OI) SST V2",
+          "level_desc": "Surface",
+          "statistic": "Mean",
+          "parent_stat": "Weekly Mean",
+          "cell_methods": "time: mean (monthly from weekly values interpolated to daily)",
+          "valid_range": [
+            -32765,
+            -22765
+          ]
+        }
+      },
+      {
+        "name": "lat",
+        "dimensions": [
+          "lat"
+        ],
+        "type": 5,
+        "stored_bytes": 720,
+        "offset": 2624,
+        "attributes": {
+          "units": "degrees_north",
+          "long_name": "Latitude",
+          "actual_range": [
+            89.5,
+            -89.5
+          ],
+          "standard_name": "latitude",
+          "axis": "Y",
+          "coordinate_defines": "center"
+        }
+      },
+      {
+        "name": "lon",
+        "dimensions": [
+          "lon"
+        ],
+        "type": 5,
+        "stored_bytes": 1440,
+        "offset": 3344,
+        "attributes": {
+          "units": "degrees_east",
+          "long_name": "Longitude",
+          "actual_range": [
+            0.5,
+            359.5
+          ],
+          "standard_name": "longitude",
+          "axis": "X",
+          "coordinate_defines": "center"
+        }
+      },
+      {
+        "name": "time",
+        "dimensions": [
+          "time"
+        ],
+        "type": 6,
+        "stored_bytes": 8,
+        "offset": 134384,
+        "attributes": {
+          "units": "days since 1800-1-1 00:00:00",
+          "long_name": "Time",
+          "actual_range": [
+            66443.0,
+            80870.0
+          ],
+          "delta_t": "0000-01-00 00:00:00",
+          "avg_period": "0000-01-00 00:00:00",
+          "prev_avg_period": "0000-00-07 00:00:00",
+          "standard_name": "time",
+          "axis": "T",
+          "bounds": "time_bnds"
+        }
+      },
+      {
+        "name": "time_bnds",
+        "dimensions": [
+          "time",
+          "nbnds"
+        ],
+        "type": 6,
+        "stored_bytes": 16,
+        "offset": 134392,
+        "attributes": {
+          "long_name": "Time Boundaries"
+        }
+      }
+    ]
+  },
+  "jet/wspd.mon.mean.nc": {
+    "format": "89484446",
+    "status": "unsupported_header"
+  },
+  "make_sst_jan/sst.mnmean.nc": {
+    "format": "CDF-1",
+    "status": "header_read",
+    "records": 472,
+    "dimensions": [
+      {
+        "name": "lat",
+        "size": 180
+      },
+      {
+        "name": "lon",
+        "size": 360
+      },
+      {
+        "name": "time",
+        "size": 0
+      },
+      {
+        "name": "nbnds",
+        "size": 2
+      }
+    ],
+    "global_attributes": {
+      "title": "NOAA Optimum Interpolation (OI) SST V2",
+      "Conventions": "CF-1.0",
+      "history": "Wed Apr  6 13:47:45 2005: ncks -d time,0,278 SAVEs/sst.mnmean.nc sst.mnmean.nc\nCreated 10/2002 by RHS",
+      "comments": "Data described in  Reynolds, R.W., N.A. Rayner, T.M.\nSmith, D.C. Stokes, and W. Wang, 2002: An Improved In Situ and Satellite\nSST Analysis for Climate, J. Climate",
+      "platform": "Model",
+      "source": "NCEP Climate Modeling Branch",
+      "institution": "National Centers for Environmental Prediction",
+      "References": "https://www.psl.noaa.gov/data/gridded/data.noaa.oisst.v2.html",
+      "dataset_title": "NOAA Optimum Interpolation (OI) SST V2",
+      "source_url": "http://www.emc.ncep.noaa.gov/research/cmb/sst_analysis/"
+    },
+    "variables": [
+      {
+        "name": "lat",
+        "dimensions": [
+          "lat"
+        ],
+        "type": 5,
+        "stored_bytes": 720,
+        "offset": 2524,
+        "attributes": {
+          "units": "degrees_north",
+          "long_name": "Latitude",
+          "actual_range": [
+            89.5,
+            -89.5
+          ],
+          "standard_name": "latitude",
+          "axis": "Y",
+          "coordinate_defines": "center"
+        }
+      },
+      {
+        "name": "lon",
+        "dimensions": [
+          "lon"
+        ],
+        "type": 5,
+        "stored_bytes": 1440,
+        "offset": 3244,
+        "attributes": {
+          "units": "degrees_east",
+          "long_name": "Longitude",
+          "actual_range": [
+            0.5,
+            359.5
+          ],
+          "standard_name": "longitude",
+          "axis": "X",
+          "coordinate_defines": "center"
+        }
+      },
+      {
+        "name": "sst",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": 3,
+        "stored_bytes": 129600,
+        "offset": 4684,
+        "attributes": {
+          "long_name": "Monthly Mean of Sea Surface Temperature",
+          "unpacked_valid_range": [
+            -5.0,
+            40.0
+          ],
+          "actual_range": [
+            -1.7999995946884155,
+            35.56861877441406
+          ],
+          "units": "degC",
+          "add_offset": 0.0,
+          "scale_factor": 0.009999999776482582,
+          "missing_value": 32767,
+          "precision": 2,
+          "least_significant_digit": 2,
+          "var_desc": "Sea Surface Temperature",
+          "dataset": "NOAA Optimum Interpolation (OI) SST V2",
+          "level_desc": "Surface",
+          "statistic": "Mean",
+          "parent_stat": "Weekly Mean",
+          "standard_name": "sea_surface_temperature",
+          "cell_methods": "time: mean (monthly from weekly values interpolated to daily)",
+          "valid_range": [
+            -500,
+            4000
+          ]
+        }
+      },
+      {
+        "name": "time",
+        "dimensions": [
+          "time"
+        ],
+        "type": 6,
+        "stored_bytes": 8,
+        "offset": 134284,
+        "attributes": {
+          "units": "days since 1800-1-1 00:00:00",
+          "long_name": "Time",
+          "actual_range": [
+            66443.0,
+            80778.0
+          ],
+          "delta_t": "0000-01-00 00:00:00",
+          "avg_period": "0000-01-00 00:00:00",
+          "prev_avg_period": "0000-00-07 00:00:00",
+          "standard_name": "time",
+          "axis": "T",
+          "bounds": "time_bnds"
+        }
+      },
+      {
+        "name": "time_bnds",
+        "dimensions": [
+          "time",
+          "nbnds"
+        ],
+        "type": 6,
+        "stored_bytes": 16,
+        "offset": 134292,
+        "attributes": {
+          "long_name": "Time Boundaries"
+        }
+      }
+    ]
+  },
+  "nonmun/air.mon.mean.nc": {
+    "format": "89484446",
+    "status": "unsupported_header"
+  },
+  "nonmun/sst.mnmean.nc": {
+    "format": "CDF-1",
+    "status": "header_read",
+    "records": 472,
+    "dimensions": [
+      {
+        "name": "lat",
+        "size": 180
+      },
+      {
+        "name": "lon",
+        "size": 360
+      },
+      {
+        "name": "time",
+        "size": 0
+      },
+      {
+        "name": "nbnds",
+        "size": 2
+      }
+    ],
+    "global_attributes": {
+      "title": "NOAA Optimum Interpolation (OI) SST V2",
+      "Conventions": "CF-1.0",
+      "history": "Wed Apr  6 13:47:45 2005: ncks -d time,0,278 SAVEs/sst.mnmean.nc sst.mnmean.nc\nCreated 10/2002 by RHS",
+      "comments": "Data described in  Reynolds, R.W., N.A. Rayner, T.M.\nSmith, D.C. Stokes, and W. Wang, 2002: An Improved In Situ and Satellite\nSST Analysis for Climate, J. Climate",
+      "platform": "Model",
+      "source": "NCEP Climate Modeling Branch",
+      "institution": "National Centers for Environmental Prediction",
+      "References": "https://www.psl.noaa.gov/data/gridded/data.noaa.oisst.v2.html",
+      "dataset_title": "NOAA Optimum Interpolation (OI) SST V2",
+      "source_url": "http://www.emc.ncep.noaa.gov/research/cmb/sst_analysis/"
+    },
+    "variables": [
+      {
+        "name": "lat",
+        "dimensions": [
+          "lat"
+        ],
+        "type": 5,
+        "stored_bytes": 720,
+        "offset": 2524,
+        "attributes": {
+          "units": "degrees_north",
+          "long_name": "Latitude",
+          "actual_range": [
+            89.5,
+            -89.5
+          ],
+          "standard_name": "latitude",
+          "axis": "Y",
+          "coordinate_defines": "center"
+        }
+      },
+      {
+        "name": "lon",
+        "dimensions": [
+          "lon"
+        ],
+        "type": 5,
+        "stored_bytes": 1440,
+        "offset": 3244,
+        "attributes": {
+          "units": "degrees_east",
+          "long_name": "Longitude",
+          "actual_range": [
+            0.5,
+            359.5
+          ],
+          "standard_name": "longitude",
+          "axis": "X",
+          "coordinate_defines": "center"
+        }
+      },
+      {
+        "name": "sst",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": 3,
+        "stored_bytes": 129600,
+        "offset": 4684,
+        "attributes": {
+          "long_name": "Monthly Mean of Sea Surface Temperature",
+          "unpacked_valid_range": [
+            -5.0,
+            40.0
+          ],
+          "actual_range": [
+            -1.7999995946884155,
+            35.56861877441406
+          ],
+          "units": "degC",
+          "add_offset": 0.0,
+          "scale_factor": 0.009999999776482582,
+          "missing_value": 32767,
+          "precision": 2,
+          "least_significant_digit": 2,
+          "var_desc": "Sea Surface Temperature",
+          "dataset": "NOAA Optimum Interpolation (OI) SST V2",
+          "level_desc": "Surface",
+          "statistic": "Mean",
+          "parent_stat": "Weekly Mean",
+          "standard_name": "sea_surface_temperature",
+          "cell_methods": "time: mean (monthly from weekly values interpolated to daily)",
+          "valid_range": [
+            -500,
+            4000
+          ]
+        }
+      },
+      {
+        "name": "time",
+        "dimensions": [
+          "time"
+        ],
+        "type": 6,
+        "stored_bytes": 8,
+        "offset": 134284,
+        "attributes": {
+          "units": "days since 1800-1-1 00:00:00",
+          "long_name": "Time",
+          "actual_range": [
+            66443.0,
+            80778.0
+          ],
+          "delta_t": "0000-01-00 00:00:00",
+          "avg_period": "0000-01-00 00:00:00",
+          "prev_avg_period": "0000-00-07 00:00:00",
+          "standard_name": "time",
+          "axis": "T",
+          "bounds": "time_bnds"
+        }
+      },
+      {
+        "name": "time_bnds",
+        "dimensions": [
+          "time",
+          "nbnds"
+        ],
+        "type": 6,
+        "stored_bytes": 16,
+        "offset": 134292,
+        "attributes": {
+          "long_name": "Time Boundaries"
+        }
+      }
+    ]
+  },
+  "nonmun/vwnd.mon.mean.nc": {
+    "format": "89484446",
+    "status": "unsupported_header"
+  },
+  "nonmunDJF/sst.mnmean.nc": {
+    "format": "CDF-1",
+    "status": "header_read",
+    "records": 472,
+    "dimensions": [
+      {
+        "name": "lat",
+        "size": 180
+      },
+      {
+        "name": "lon",
+        "size": 360
+      },
+      {
+        "name": "time",
+        "size": 0
+      },
+      {
+        "name": "nbnds",
+        "size": 2
+      }
+    ],
+    "global_attributes": {
+      "title": "NOAA Optimum Interpolation (OI) SST V2",
+      "Conventions": "CF-1.0",
+      "history": "Wed Apr  6 13:47:45 2005: ncks -d time,0,278 SAVEs/sst.mnmean.nc sst.mnmean.nc\nCreated 10/2002 by RHS",
+      "comments": "Data described in  Reynolds, R.W., N.A. Rayner, T.M.\nSmith, D.C. Stokes, and W. Wang, 2002: An Improved In Situ and Satellite\nSST Analysis for Climate, J. Climate",
+      "platform": "Model",
+      "source": "NCEP Climate Modeling Branch",
+      "institution": "National Centers for Environmental Prediction",
+      "References": "https://www.psl.noaa.gov/data/gridded/data.noaa.oisst.v2.html",
+      "dataset_title": "NOAA Optimum Interpolation (OI) SST V2",
+      "source_url": "http://www.emc.ncep.noaa.gov/research/cmb/sst_analysis/"
+    },
+    "variables": [
+      {
+        "name": "lat",
+        "dimensions": [
+          "lat"
+        ],
+        "type": 5,
+        "stored_bytes": 720,
+        "offset": 2524,
+        "attributes": {
+          "units": "degrees_north",
+          "long_name": "Latitude",
+          "actual_range": [
+            89.5,
+            -89.5
+          ],
+          "standard_name": "latitude",
+          "axis": "Y",
+          "coordinate_defines": "center"
+        }
+      },
+      {
+        "name": "lon",
+        "dimensions": [
+          "lon"
+        ],
+        "type": 5,
+        "stored_bytes": 1440,
+        "offset": 3244,
+        "attributes": {
+          "units": "degrees_east",
+          "long_name": "Longitude",
+          "actual_range": [
+            0.5,
+            359.5
+          ],
+          "standard_name": "longitude",
+          "axis": "X",
+          "coordinate_defines": "center"
+        }
+      },
+      {
+        "name": "sst",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": 3,
+        "stored_bytes": 129600,
+        "offset": 4684,
+        "attributes": {
+          "long_name": "Monthly Mean of Sea Surface Temperature",
+          "unpacked_valid_range": [
+            -5.0,
+            40.0
+          ],
+          "actual_range": [
+            -1.7999995946884155,
+            35.56861877441406
+          ],
+          "units": "degC",
+          "add_offset": 0.0,
+          "scale_factor": 0.009999999776482582,
+          "missing_value": 32767,
+          "precision": 2,
+          "least_significant_digit": 2,
+          "var_desc": "Sea Surface Temperature",
+          "dataset": "NOAA Optimum Interpolation (OI) SST V2",
+          "level_desc": "Surface",
+          "statistic": "Mean",
+          "parent_stat": "Weekly Mean",
+          "standard_name": "sea_surface_temperature",
+          "cell_methods": "time: mean (monthly from weekly values interpolated to daily)",
+          "valid_range": [
+            -500,
+            4000
+          ]
+        }
+      },
+      {
+        "name": "time",
+        "dimensions": [
+          "time"
+        ],
+        "type": 6,
+        "stored_bytes": 8,
+        "offset": 134284,
+        "attributes": {
+          "units": "days since 1800-1-1 00:00:00",
+          "long_name": "Time",
+          "actual_range": [
+            66443.0,
+            80778.0
+          ],
+          "delta_t": "0000-01-00 00:00:00",
+          "avg_period": "0000-01-00 00:00:00",
+          "prev_avg_period": "0000-00-07 00:00:00",
+          "standard_name": "time",
+          "axis": "T",
+          "bounds": "time_bnds"
+        }
+      },
+      {
+        "name": "time_bnds",
+        "dimensions": [
+          "time",
+          "nbnds"
+        ],
+        "type": 6,
+        "stored_bytes": 16,
+        "offset": 134292,
+        "attributes": {
+          "long_name": "Time Boundaries"
+        }
+      }
+    ]
+  },
+  "nonmunJFM/sst.mnmean.nc": {
+    "format": "CDF-1",
+    "status": "header_read",
+    "records": 472,
+    "dimensions": [
+      {
+        "name": "lat",
+        "size": 180
+      },
+      {
+        "name": "lon",
+        "size": 360
+      },
+      {
+        "name": "time",
+        "size": 0
+      },
+      {
+        "name": "nbnds",
+        "size": 2
+      }
+    ],
+    "global_attributes": {
+      "title": "NOAA Optimum Interpolation (OI) SST V2",
+      "Conventions": "CF-1.0",
+      "history": "Wed Apr  6 13:47:45 2005: ncks -d time,0,278 SAVEs/sst.mnmean.nc sst.mnmean.nc\nCreated 10/2002 by RHS",
+      "comments": "Data described in  Reynolds, R.W., N.A. Rayner, T.M.\nSmith, D.C. Stokes, and W. Wang, 2002: An Improved In Situ and Satellite\nSST Analysis for Climate, J. Climate",
+      "platform": "Model",
+      "source": "NCEP Climate Modeling Branch",
+      "institution": "National Centers for Environmental Prediction",
+      "References": "https://www.psl.noaa.gov/data/gridded/data.noaa.oisst.v2.html",
+      "dataset_title": "NOAA Optimum Interpolation (OI) SST V2",
+      "source_url": "http://www.emc.ncep.noaa.gov/research/cmb/sst_analysis/"
+    },
+    "variables": [
+      {
+        "name": "lat",
+        "dimensions": [
+          "lat"
+        ],
+        "type": 5,
+        "stored_bytes": 720,
+        "offset": 2524,
+        "attributes": {
+          "units": "degrees_north",
+          "long_name": "Latitude",
+          "actual_range": [
+            89.5,
+            -89.5
+          ],
+          "standard_name": "latitude",
+          "axis": "Y",
+          "coordinate_defines": "center"
+        }
+      },
+      {
+        "name": "lon",
+        "dimensions": [
+          "lon"
+        ],
+        "type": 5,
+        "stored_bytes": 1440,
+        "offset": 3244,
+        "attributes": {
+          "units": "degrees_east",
+          "long_name": "Longitude",
+          "actual_range": [
+            0.5,
+            359.5
+          ],
+          "standard_name": "longitude",
+          "axis": "X",
+          "coordinate_defines": "center"
+        }
+      },
+      {
+        "name": "sst",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": 3,
+        "stored_bytes": 129600,
+        "offset": 4684,
+        "attributes": {
+          "long_name": "Monthly Mean of Sea Surface Temperature",
+          "unpacked_valid_range": [
+            -5.0,
+            40.0
+          ],
+          "actual_range": [
+            -1.7999995946884155,
+            35.56861877441406
+          ],
+          "units": "degC",
+          "add_offset": 0.0,
+          "scale_factor": 0.009999999776482582,
+          "missing_value": 32767,
+          "precision": 2,
+          "least_significant_digit": 2,
+          "var_desc": "Sea Surface Temperature",
+          "dataset": "NOAA Optimum Interpolation (OI) SST V2",
+          "level_desc": "Surface",
+          "statistic": "Mean",
+          "parent_stat": "Weekly Mean",
+          "standard_name": "sea_surface_temperature",
+          "cell_methods": "time: mean (monthly from weekly values interpolated to daily)",
+          "valid_range": [
+            -500,
+            4000
+          ]
+        }
+      },
+      {
+        "name": "time",
+        "dimensions": [
+          "time"
+        ],
+        "type": 6,
+        "stored_bytes": 8,
+        "offset": 134284,
+        "attributes": {
+          "units": "days since 1800-1-1 00:00:00",
+          "long_name": "Time",
+          "actual_range": [
+            66443.0,
+            80778.0
+          ],
+          "delta_t": "0000-01-00 00:00:00",
+          "avg_period": "0000-01-00 00:00:00",
+          "prev_avg_period": "0000-00-07 00:00:00",
+          "standard_name": "time",
+          "axis": "T",
+          "bounds": "time_bnds"
+        }
+      },
+      {
+        "name": "time_bnds",
+        "dimensions": [
+          "time",
+          "nbnds"
+        ],
+        "type": 6,
+        "stored_bytes": 16,
+        "offset": 134292,
+        "attributes": {
+          "long_name": "Time Boundaries"
+        }
+      }
+    ]
+  },
+  "nonmunNDJ/sst.mnmean.nc": {
+    "format": "CDF-1",
+    "status": "header_read",
+    "records": 472,
+    "dimensions": [
+      {
+        "name": "lat",
+        "size": 180
+      },
+      {
+        "name": "lon",
+        "size": 360
+      },
+      {
+        "name": "time",
+        "size": 0
+      },
+      {
+        "name": "nbnds",
+        "size": 2
+      }
+    ],
+    "global_attributes": {
+      "title": "NOAA Optimum Interpolation (OI) SST V2",
+      "Conventions": "CF-1.0",
+      "history": "Wed Apr  6 13:47:45 2005: ncks -d time,0,278 SAVEs/sst.mnmean.nc sst.mnmean.nc\nCreated 10/2002 by RHS",
+      "comments": "Data described in  Reynolds, R.W., N.A. Rayner, T.M.\nSmith, D.C. Stokes, and W. Wang, 2002: An Improved In Situ and Satellite\nSST Analysis for Climate, J. Climate",
+      "platform": "Model",
+      "source": "NCEP Climate Modeling Branch",
+      "institution": "National Centers for Environmental Prediction",
+      "References": "https://www.psl.noaa.gov/data/gridded/data.noaa.oisst.v2.html",
+      "dataset_title": "NOAA Optimum Interpolation (OI) SST V2",
+      "source_url": "http://www.emc.ncep.noaa.gov/research/cmb/sst_analysis/"
+    },
+    "variables": [
+      {
+        "name": "lat",
+        "dimensions": [
+          "lat"
+        ],
+        "type": 5,
+        "stored_bytes": 720,
+        "offset": 2524,
+        "attributes": {
+          "units": "degrees_north",
+          "long_name": "Latitude",
+          "actual_range": [
+            89.5,
+            -89.5
+          ],
+          "standard_name": "latitude",
+          "axis": "Y",
+          "coordinate_defines": "center"
+        }
+      },
+      {
+        "name": "lon",
+        "dimensions": [
+          "lon"
+        ],
+        "type": 5,
+        "stored_bytes": 1440,
+        "offset": 3244,
+        "attributes": {
+          "units": "degrees_east",
+          "long_name": "Longitude",
+          "actual_range": [
+            0.5,
+            359.5
+          ],
+          "standard_name": "longitude",
+          "axis": "X",
+          "coordinate_defines": "center"
+        }
+      },
+      {
+        "name": "sst",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": 3,
+        "stored_bytes": 129600,
+        "offset": 4684,
+        "attributes": {
+          "long_name": "Monthly Mean of Sea Surface Temperature",
+          "unpacked_valid_range": [
+            -5.0,
+            40.0
+          ],
+          "actual_range": [
+            -1.7999995946884155,
+            35.56861877441406
+          ],
+          "units": "degC",
+          "add_offset": 0.0,
+          "scale_factor": 0.009999999776482582,
+          "missing_value": 32767,
+          "precision": 2,
+          "least_significant_digit": 2,
+          "var_desc": "Sea Surface Temperature",
+          "dataset": "NOAA Optimum Interpolation (OI) SST V2",
+          "level_desc": "Surface",
+          "statistic": "Mean",
+          "parent_stat": "Weekly Mean",
+          "standard_name": "sea_surface_temperature",
+          "cell_methods": "time: mean (monthly from weekly values interpolated to daily)",
+          "valid_range": [
+            -500,
+            4000
+          ]
+        }
+      },
+      {
+        "name": "time",
+        "dimensions": [
+          "time"
+        ],
+        "type": 6,
+        "stored_bytes": 8,
+        "offset": 134284,
+        "attributes": {
+          "units": "days since 1800-1-1 00:00:00",
+          "long_name": "Time",
+          "actual_range": [
+            66443.0,
+            80778.0
+          ],
+          "delta_t": "0000-01-00 00:00:00",
+          "avg_period": "0000-01-00 00:00:00",
+          "prev_avg_period": "0000-00-07 00:00:00",
+          "standard_name": "time",
+          "axis": "T",
+          "bounds": "time_bnds"
+        }
+      },
+      {
+        "name": "time_bnds",
+        "dimensions": [
+          "time",
+          "nbnds"
+        ],
+        "type": 6,
+        "stored_bytes": 16,
+        "offset": 134292,
+        "attributes": {
+          "long_name": "Time Boundaries"
+        }
+      }
+    ]
+  },
+  "partial_regression/mslp.mon.mean.nc": {
+    "format": "CDF-1",
+    "status": "header_read",
+    "records": 489,
+    "dimensions": [
+      {
+        "name": "lat",
+        "size": 73
+      },
+      {
+        "name": "lon",
+        "size": 144
+      },
+      {
+        "name": "time",
+        "size": 0
+      },
+      {
+        "name": "nbnds",
+        "size": 2
+      }
+    ],
+    "global_attributes": {
+      "Conventions": "CF-1.0",
+      "title": "Monthly NCEP/DOE Reanalysis 2",
+      "history": "created 2002/03 by Hoop (netCDF2.3)",
+      "comments": "Data is from \nNCEP/DOE AMIP-II Reanalysis (Reanalysis-2)\n(4x/day).  Data interpolated from model (sigma) surfaces to\na rectangular grid.",
+      "platform": "Model",
+      "source": "NCEP/DOE AMIP-II Reanalysis (Reanalysis-2) Model",
+      "institution": "National Centers for Environmental Prediction",
+      "dataset_title": "NCEP-DOE AMIP-II Reanalysis",
+      "References": "https://www.esrl.noaa.gov/psd/data/gridded/data.ncep.reanalysis2.html",
+      "source_url": "http://www.cpc.ncep.noaa.gov/products/wesley/reanalysis2/"
+    },
+    "variables": [
+      {
+        "name": "lat",
+        "dimensions": [
+          "lat"
+        ],
+        "type": 5,
+        "stored_bytes": 292,
+        "offset": 2528,
+        "attributes": {
+          "units": "degrees_north",
+          "actual_range": [
+            90.0,
+            -90.0
+          ],
+          "long_name": "Latitude",
+          "standard_name": "latitude",
+          "axis": "Y",
+          "coordinate_defines": "point"
+        }
+      },
+      {
+        "name": "lon",
+        "dimensions": [
+          "lon"
+        ],
+        "type": 5,
+        "stored_bytes": 576,
+        "offset": 2820,
+        "attributes": {
+          "units": "degrees_east",
+          "long_name": "Longitude",
+          "actual_range": [
+            0.0,
+            357.5
+          ],
+          "standard_name": "longitude",
+          "axis": "X",
+          "coordinate_defines": "point"
+        }
+      },
+      {
+        "name": "mslp",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": 3,
+        "stored_bytes": 21024,
+        "offset": 3396,
+        "attributes": {
+          "long_name": "Monthly Mean Sea Level Pressure",
+          "valid_range": [
+            -32766,
+            15234
+          ],
+          "unpacked_valid_range": [
+            77000.0,
+            125000.0
+          ],
+          "actual_range": [
+            95644.0,
+            105703.0
+          ],
+          "units": "Pascals",
+          "add_offset": 109766.0,
+          "scale_factor": 1.0,
+          "missing_value": 32766,
+          "precision": 0,
+          "least_significant_digit": -1,
+          "GRIB_id": 2,
+          "GRIB_name": "PRMSL",
+          "var_desc": "Mean Sea Level Pressure",
+          "dataset": "NCEP/DOE AMIP-II Reanalysis (Reanalysis-2) Monthly Averages",
+          "level_desc": "Sea Level",
+          "statistic": "Individual Obs",
+          "parent_stat": "Other",
+          "standard_name": "pressure",
+          "cell_methods": "time: mean (monthly from 6-hourly values)"
+        }
+      },
+      {
+        "name": "time",
+        "dimensions": [
+          "time"
+        ],
+        "type": 6,
+        "stored_bytes": 8,
+        "offset": 24420,
+        "attributes": {
+          "units": "hours since 1800-1-1 00:00:00",
+          "long_name": "Time",
+          "actual_range": [
+            1569072.0,
+            1925544.0
+          ],
+          "delta_t": "0000-01-00 00:00:00",
+          "avg_period": "0000-01-00 00:00:00",
+          "prev_avg_period": "0000-00-01 00:00:00",
+          "standard_name": "time",
+          "axis": "T",
+          "coordinate_defines": "start",
+          "bounds": "time_bnds"
+        }
+      },
+      {
+        "name": "time_bnds",
+        "dimensions": [
+          "time",
+          "nbnds"
+        ],
+        "type": 6,
+        "stored_bytes": 16,
+        "offset": 24428,
+        "attributes": {
+          "long_name": "Time Boundaries"
+        }
+      }
+    ]
+  },
+  "snow2/sst.mnmean.nc": {
+    "format": "CDF-1",
+    "status": "header_read",
+    "records": 472,
+    "dimensions": [
+      {
+        "name": "lat",
+        "size": 180
+      },
+      {
+        "name": "lon",
+        "size": 360
+      },
+      {
+        "name": "time",
+        "size": 0
+      },
+      {
+        "name": "nbnds",
+        "size": 2
+      }
+    ],
+    "global_attributes": {
+      "title": "NOAA Optimum Interpolation (OI) SST V2",
+      "Conventions": "CF-1.0",
+      "history": "Wed Apr  6 13:47:45 2005: ncks -d time,0,278 SAVEs/sst.mnmean.nc sst.mnmean.nc\nCreated 10/2002 by RHS",
+      "comments": "Data described in  Reynolds, R.W., N.A. Rayner, T.M.\nSmith, D.C. Stokes, and W. Wang, 2002: An Improved In Situ and Satellite\nSST Analysis for Climate, J. Climate",
+      "platform": "Model",
+      "source": "NCEP Climate Modeling Branch",
+      "institution": "National Centers for Environmental Prediction",
+      "References": "https://www.psl.noaa.gov/data/gridded/data.noaa.oisst.v2.html",
+      "dataset_title": "NOAA Optimum Interpolation (OI) SST V2",
+      "source_url": "http://www.emc.ncep.noaa.gov/research/cmb/sst_analysis/"
+    },
+    "variables": [
+      {
+        "name": "lat",
+        "dimensions": [
+          "lat"
+        ],
+        "type": 5,
+        "stored_bytes": 720,
+        "offset": 2524,
+        "attributes": {
+          "units": "degrees_north",
+          "long_name": "Latitude",
+          "actual_range": [
+            89.5,
+            -89.5
+          ],
+          "standard_name": "latitude",
+          "axis": "Y",
+          "coordinate_defines": "center"
+        }
+      },
+      {
+        "name": "lon",
+        "dimensions": [
+          "lon"
+        ],
+        "type": 5,
+        "stored_bytes": 1440,
+        "offset": 3244,
+        "attributes": {
+          "units": "degrees_east",
+          "long_name": "Longitude",
+          "actual_range": [
+            0.5,
+            359.5
+          ],
+          "standard_name": "longitude",
+          "axis": "X",
+          "coordinate_defines": "center"
+        }
+      },
+      {
+        "name": "sst",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": 3,
+        "stored_bytes": 129600,
+        "offset": 4684,
+        "attributes": {
+          "long_name": "Monthly Mean of Sea Surface Temperature",
+          "unpacked_valid_range": [
+            -5.0,
+            40.0
+          ],
+          "actual_range": [
+            -1.7999995946884155,
+            35.56861877441406
+          ],
+          "units": "degC",
+          "add_offset": 0.0,
+          "scale_factor": 0.009999999776482582,
+          "missing_value": 32767,
+          "precision": 2,
+          "least_significant_digit": 2,
+          "var_desc": "Sea Surface Temperature",
+          "dataset": "NOAA Optimum Interpolation (OI) SST V2",
+          "level_desc": "Surface",
+          "statistic": "Mean",
+          "parent_stat": "Weekly Mean",
+          "standard_name": "sea_surface_temperature",
+          "cell_methods": "time: mean (monthly from weekly values interpolated to daily)",
+          "valid_range": [
+            -500,
+            4000
+          ]
+        }
+      },
+      {
+        "name": "time",
+        "dimensions": [
+          "time"
+        ],
+        "type": 6,
+        "stored_bytes": 8,
+        "offset": 134284,
+        "attributes": {
+          "units": "days since 1800-1-1 00:00:00",
+          "long_name": "Time",
+          "actual_range": [
+            66443.0,
+            80778.0
+          ],
+          "delta_t": "0000-01-00 00:00:00",
+          "avg_period": "0000-01-00 00:00:00",
+          "prev_avg_period": "0000-00-07 00:00:00",
+          "standard_name": "time",
+          "axis": "T",
+          "bounds": "time_bnds"
+        }
+      },
+      {
+        "name": "time_bnds",
+        "dimensions": [
+          "time",
+          "nbnds"
+        ],
+        "type": 6,
+        "stored_bytes": 16,
+        "offset": 134292,
+        "attributes": {
+          "long_name": "Time Boundaries"
+        }
+      }
+    ]
+  },
+  "snow3/sst.mnmean.nc": {
+    "format": "CDF-1",
+    "status": "header_read",
+    "records": 472,
+    "dimensions": [
+      {
+        "name": "lat",
+        "size": 180
+      },
+      {
+        "name": "lon",
+        "size": 360
+      },
+      {
+        "name": "time",
+        "size": 0
+      },
+      {
+        "name": "nbnds",
+        "size": 2
+      }
+    ],
+    "global_attributes": {
+      "title": "NOAA Optimum Interpolation (OI) SST V2",
+      "Conventions": "CF-1.0",
+      "history": "Wed Apr  6 13:47:45 2005: ncks -d time,0,278 SAVEs/sst.mnmean.nc sst.mnmean.nc\nCreated 10/2002 by RHS",
+      "comments": "Data described in  Reynolds, R.W., N.A. Rayner, T.M.\nSmith, D.C. Stokes, and W. Wang, 2002: An Improved In Situ and Satellite\nSST Analysis for Climate, J. Climate",
+      "platform": "Model",
+      "source": "NCEP Climate Modeling Branch",
+      "institution": "National Centers for Environmental Prediction",
+      "References": "https://www.psl.noaa.gov/data/gridded/data.noaa.oisst.v2.html",
+      "dataset_title": "NOAA Optimum Interpolation (OI) SST V2",
+      "source_url": "http://www.emc.ncep.noaa.gov/research/cmb/sst_analysis/"
+    },
+    "variables": [
+      {
+        "name": "lat",
+        "dimensions": [
+          "lat"
+        ],
+        "type": 5,
+        "stored_bytes": 720,
+        "offset": 2524,
+        "attributes": {
+          "units": "degrees_north",
+          "long_name": "Latitude",
+          "actual_range": [
+            89.5,
+            -89.5
+          ],
+          "standard_name": "latitude",
+          "axis": "Y",
+          "coordinate_defines": "center"
+        }
+      },
+      {
+        "name": "lon",
+        "dimensions": [
+          "lon"
+        ],
+        "type": 5,
+        "stored_bytes": 1440,
+        "offset": 3244,
+        "attributes": {
+          "units": "degrees_east",
+          "long_name": "Longitude",
+          "actual_range": [
+            0.5,
+            359.5
+          ],
+          "standard_name": "longitude",
+          "axis": "X",
+          "coordinate_defines": "center"
+        }
+      },
+      {
+        "name": "sst",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": 3,
+        "stored_bytes": 129600,
+        "offset": 4684,
+        "attributes": {
+          "long_name": "Monthly Mean of Sea Surface Temperature",
+          "unpacked_valid_range": [
+            -5.0,
+            40.0
+          ],
+          "actual_range": [
+            -1.7999995946884155,
+            35.56861877441406
+          ],
+          "units": "degC",
+          "add_offset": 0.0,
+          "scale_factor": 0.009999999776482582,
+          "missing_value": 32767,
+          "precision": 2,
+          "least_significant_digit": 2,
+          "var_desc": "Sea Surface Temperature",
+          "dataset": "NOAA Optimum Interpolation (OI) SST V2",
+          "level_desc": "Surface",
+          "statistic": "Mean",
+          "parent_stat": "Weekly Mean",
+          "standard_name": "sea_surface_temperature",
+          "cell_methods": "time: mean (monthly from weekly values interpolated to daily)",
+          "valid_range": [
+            -500,
+            4000
+          ]
+        }
+      },
+      {
+        "name": "time",
+        "dimensions": [
+          "time"
+        ],
+        "type": 6,
+        "stored_bytes": 8,
+        "offset": 134284,
+        "attributes": {
+          "units": "days since 1800-1-1 00:00:00",
+          "long_name": "Time",
+          "actual_range": [
+            66443.0,
+            80778.0
+          ],
+          "delta_t": "0000-01-00 00:00:00",
+          "avg_period": "0000-01-00 00:00:00",
+          "prev_avg_period": "0000-00-07 00:00:00",
+          "standard_name": "time",
+          "axis": "T",
+          "bounds": "time_bnds"
+        }
+      },
+      {
+        "name": "time_bnds",
+        "dimensions": [
+          "time",
+          "nbnds"
+        ],
+        "type": 6,
+        "stored_bytes": 16,
+        "offset": 134292,
+        "attributes": {
+          "long_name": "Time Boundaries"
+        }
+      }
+    ]
+  },
+  "snowday_reg_sea_ice/icec.mnmean.nc": {
+    "format": "CDF-1",
+    "status": "header_read",
+    "records": 475,
+    "dimensions": [
+      {
+        "name": "time",
+        "size": 0
+      },
+      {
+        "name": "lat",
+        "size": 180
+      },
+      {
+        "name": "lon",
+        "size": 360
+      },
+      {
+        "name": "nbnds",
+        "size": 2
+      }
+    ],
+    "global_attributes": {
+      "title": "NOAA Optimum Interpolation (OI) SST V2",
+      "Conventions": "CF-1.0",
+      "history": "Wed Apr  6 13:51:42 2005: ncks -d time,0,278 SAVEs/icec.mnmean.nc icec.mnmean.nc\nCreated 10/2002 by RHS\nN.B. The land values in this ice concentration data set have been set to the missing value of 32767.  The land values vary with time.",
+      "comments": "Data described in  Reynolds, R.W., N.A. Rayner, T.M.\nSmith, D.C. Stokes, and W. Wang, 2002: An Improved In Situ and Satellite\nSST Analysis for Climate, J. Climate",
+      "platform": "Model",
+      "source": "NCEP Climate Modeling Branch",
+      "institution": "National Centers for Environmental Prediction",
+      "References": "https://www.psl.noaa.gov/data/gridded/data.noaa.oisst.v2.html",
+      "NCO": "4.0.0",
+      "dataset_title": "NOAA Optimum Interpolation (OI) SST V2",
+      "source_url": "http://www.emc.ncep.noaa.gov/research/cmb/sst_analysis/"
+    },
+    "variables": [
+      {
+        "name": "icec",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": 3,
+        "stored_bytes": 129600,
+        "offset": 4784,
+        "attributes": {
+          "long_name": "Monthly Means of Ice Concentration",
+          "unpacked_valid_range": [
+            0.0,
+            100.0
+          ],
+          "actual_range": [
+            0.0,
+            122.0
+          ],
+          "units": "%",
+          "add_offset": 327.6499938964844,
+          "scale_factor": 0.009999999776482582,
+          "missing_value": 32767,
+          "precision": 2,
+          "least_significant_digit": 2,
+          "var_desc": "Ice Concentration",
+          "dataset": "NOAA Optimum Interpolation (OI) SST V2",
+          "level_desc": "Surface",
+          "statistic": "Mean",
+          "parent_stat": "Weekly Mean",
+          "cell_methods": "time: mean (monthly from weekly values interpolated to daily)",
+          "valid_range": [
+            -32765,
+            -22765
+          ]
+        }
+      },
+      {
+        "name": "lat",
+        "dimensions": [
+          "lat"
+        ],
+        "type": 5,
+        "stored_bytes": 720,
+        "offset": 2624,
+        "attributes": {
+          "units": "degrees_north",
+          "long_name": "Latitude",
+          "actual_range": [
+            89.5,
+            -89.5
+          ],
+          "standard_name": "latitude",
+          "axis": "Y",
+          "coordinate_defines": "center"
+        }
+      },
+      {
+        "name": "lon",
+        "dimensions": [
+          "lon"
+        ],
+        "type": 5,
+        "stored_bytes": 1440,
+        "offset": 3344,
+        "attributes": {
+          "units": "degrees_east",
+          "long_name": "Longitude",
+          "actual_range": [
+            0.5,
+            359.5
+          ],
+          "standard_name": "longitude",
+          "axis": "X",
+          "coordinate_defines": "center"
+        }
+      },
+      {
+        "name": "time",
+        "dimensions": [
+          "time"
+        ],
+        "type": 6,
+        "stored_bytes": 8,
+        "offset": 134384,
+        "attributes": {
+          "units": "days since 1800-1-1 00:00:00",
+          "long_name": "Time",
+          "actual_range": [
+            66443.0,
+            80870.0
+          ],
+          "delta_t": "0000-01-00 00:00:00",
+          "avg_period": "0000-01-00 00:00:00",
+          "prev_avg_period": "0000-00-07 00:00:00",
+          "standard_name": "time",
+          "axis": "T",
+          "bounds": "time_bnds"
+        }
+      },
+      {
+        "name": "time_bnds",
+        "dimensions": [
+          "time",
+          "nbnds"
+        ],
+        "type": 6,
+        "stored_bytes": 16,
+        "offset": 134392,
+        "attributes": {
+          "long_name": "Time Boundaries"
+        }
+      }
+    ]
+  },
+  "snowdepth_reg_sea_ice/icec.mnmean.nc": {
+    "format": "CDF-1",
+    "status": "header_read",
+    "records": 475,
+    "dimensions": [
+      {
+        "name": "time",
+        "size": 0
+      },
+      {
+        "name": "lat",
+        "size": 180
+      },
+      {
+        "name": "lon",
+        "size": 360
+      },
+      {
+        "name": "nbnds",
+        "size": 2
+      }
+    ],
+    "global_attributes": {
+      "title": "NOAA Optimum Interpolation (OI) SST V2",
+      "Conventions": "CF-1.0",
+      "history": "Wed Apr  6 13:51:42 2005: ncks -d time,0,278 SAVEs/icec.mnmean.nc icec.mnmean.nc\nCreated 10/2002 by RHS\nN.B. The land values in this ice concentration data set have been set to the missing value of 32767.  The land values vary with time.",
+      "comments": "Data described in  Reynolds, R.W., N.A. Rayner, T.M.\nSmith, D.C. Stokes, and W. Wang, 2002: An Improved In Situ and Satellite\nSST Analysis for Climate, J. Climate",
+      "platform": "Model",
+      "source": "NCEP Climate Modeling Branch",
+      "institution": "National Centers for Environmental Prediction",
+      "References": "https://www.psl.noaa.gov/data/gridded/data.noaa.oisst.v2.html",
+      "NCO": "4.0.0",
+      "dataset_title": "NOAA Optimum Interpolation (OI) SST V2",
+      "source_url": "http://www.emc.ncep.noaa.gov/research/cmb/sst_analysis/"
+    },
+    "variables": [
+      {
+        "name": "icec",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": 3,
+        "stored_bytes": 129600,
+        "offset": 4784,
+        "attributes": {
+          "long_name": "Monthly Means of Ice Concentration",
+          "unpacked_valid_range": [
+            0.0,
+            100.0
+          ],
+          "actual_range": [
+            0.0,
+            122.0
+          ],
+          "units": "%",
+          "add_offset": 327.6499938964844,
+          "scale_factor": 0.009999999776482582,
+          "missing_value": 32767,
+          "precision": 2,
+          "least_significant_digit": 2,
+          "var_desc": "Ice Concentration",
+          "dataset": "NOAA Optimum Interpolation (OI) SST V2",
+          "level_desc": "Surface",
+          "statistic": "Mean",
+          "parent_stat": "Weekly Mean",
+          "cell_methods": "time: mean (monthly from weekly values interpolated to daily)",
+          "valid_range": [
+            -32765,
+            -22765
+          ]
+        }
+      },
+      {
+        "name": "lat",
+        "dimensions": [
+          "lat"
+        ],
+        "type": 5,
+        "stored_bytes": 720,
+        "offset": 2624,
+        "attributes": {
+          "units": "degrees_north",
+          "long_name": "Latitude",
+          "actual_range": [
+            89.5,
+            -89.5
+          ],
+          "standard_name": "latitude",
+          "axis": "Y",
+          "coordinate_defines": "center"
+        }
+      },
+      {
+        "name": "lon",
+        "dimensions": [
+          "lon"
+        ],
+        "type": 5,
+        "stored_bytes": 1440,
+        "offset": 3344,
+        "attributes": {
+          "units": "degrees_east",
+          "long_name": "Longitude",
+          "actual_range": [
+            0.5,
+            359.5
+          ],
+          "standard_name": "longitude",
+          "axis": "X",
+          "coordinate_defines": "center"
+        }
+      },
+      {
+        "name": "time",
+        "dimensions": [
+          "time"
+        ],
+        "type": 6,
+        "stored_bytes": 8,
+        "offset": 134384,
+        "attributes": {
+          "units": "days since 1800-1-1 00:00:00",
+          "long_name": "Time",
+          "actual_range": [
+            66443.0,
+            80870.0
+          ],
+          "delta_t": "0000-01-00 00:00:00",
+          "avg_period": "0000-01-00 00:00:00",
+          "prev_avg_period": "0000-00-07 00:00:00",
+          "standard_name": "time",
+          "axis": "T",
+          "bounds": "time_bnds"
+        }
+      },
+      {
+        "name": "time_bnds",
+        "dimensions": [
+          "time",
+          "nbnds"
+        ],
+        "type": 6,
+        "stored_bytes": 16,
+        "offset": 134392,
+        "attributes": {
+          "long_name": "Time Boundaries"
+        }
+      }
+    ]
+  },
+  "test/air.mon.mean.nc": {
+    "format": "89484446",
+    "status": "unsupported_header"
+  }
+}

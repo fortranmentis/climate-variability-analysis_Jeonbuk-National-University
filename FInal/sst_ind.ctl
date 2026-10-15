@@ -1,0 +1,10 @@
+dset ^sst_ind.gdat
+TITLE sst
+UNDEF -0.99e+8
+XDEF 1 LINEAR 1 1
+YDEF 1 LINEAR 1 1
+ZDEF 1 LINEAR 1 1
+TDEF 29 LINEAR JUL1990 1yr
+VARS 1
+ind 1 1 sst_index
+ENDVARS

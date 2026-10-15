@@ -1,0 +1,10 @@
+  DSET ^ev_slp.gdat
+TITLE EOF_eigen vectors
+UNDEF    -0.99900E+09
+XDEF  49 LINEAR 120 2.5
+YDEF  17 LINEAR  20 2.5
+ZDEF  10 LINEAR   1. 1.
+TDEF  1 LINEAR 01JAN0001 1yr
+VARS  1
+ev 10   -999 eof modes
+ENDVARS

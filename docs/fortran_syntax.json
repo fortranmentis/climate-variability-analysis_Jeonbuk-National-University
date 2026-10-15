@@ -1,0 +1,251 @@
+[
+  {
+    "path": "2001air/reg_ts2map.f90",
+    "exit_code": 0,
+    "diagnostics": ""
+  },
+  {
+    "path": "2001geo/reg_ts2map.f90",
+    "exit_code": 0,
+    "diagnostics": ""
+  },
+  {
+    "path": "2001sst/reg_ts2map.f90",
+    "exit_code": 0,
+    "diagnostics": ""
+  },
+  {
+    "path": "2001wind/reg_ts2map.f90",
+    "exit_code": 0,
+    "diagnostics": ""
+  },
+  {
+    "path": "auto_correlation/correlogram.f90",
+    "exit_code": 0,
+    "diagnostics": ""
+  },
+  {
+    "path": "composite/composite.f90",
+    "exit_code": 0,
+    "diagnostics": ""
+  },
+  {
+    "path": "correlation/reg_ts2map.f90",
+    "exit_code": 0,
+    "diagnostics": ""
+  },
+  {
+    "path": "EOF/correlogram.f90",
+    "exit_code": 0,
+    "diagnostics": ""
+  },
+  {
+    "path": "EOF/eof.f90",
+    "exit_code": 0,
+    "diagnostics": "[repository]\\EOF\\eof.f90:545:19:\n\n  545 |    14 E(I-1) = E(I)\n      |                   1\nWarning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 14 at (1)\n[repository]\\EOF\\eof.f90:572:19:\n\n  572 |    22 D(I) = D(I)-H\n      |                   1\nWarning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 22 at (1)\n[repository]\\EOF\\eof.f90:599:19:\n\n  599 |       DO 24 K = 1,N\n      |                   1\nWarning: Fortran 2018 deleted feature: Shared DO termination label 24 at (1)\n[repository]\\EOF\\eof.f90:628:16:\n\n  628 |    32 Z(J,K) = P\n      |                1\nWarning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 32 at (1)\n[repository]\\EOF\\eof.f90:664:19:\n\n  664 |       DO 10 J = 1,I\n      |                   1\nWarning: Fortran 2018 deleted feature: Shared DO termination label 10 at (1)\n[repository]\\EOF\\eof.f90:665:21:\n\n  665 |    10 Z(I,J) = A(I,J)\n      |                     1\nWarning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 10 at (1)\n[repository]\\EOF\\eof.f90:677:31:\n\n  677 |    12 SCALE = SCALE+ABS(Z(I,K))\n      |                               1\nWarning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 12 at (1)\n[repository]\\EOF\\eof.f90:700:25:\n\n  700 |    20 G = G+Z(J,K)*Z(I,K)\n      |                         1\nWarning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 20 at (1)\n[repository]\\EOF\\eof.f90:703:25:\n\n  703 |    22 G = G+Z(K,J)*Z(I,K)\n      |                         1\nWarning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 22 at (1)\n[repository]\\EOF\\eof.f90:719:19:\n\n  719 |       DO 26 K = 1,J\n      |                   1\nWarning: Fortran 2018 deleted feature: Shared DO termination label 26 at (1)\n[repository]\\EOF\\eof.f90:737:25:\n\n  737 |    34 G = G+Z(I,K)*Z(K,J)\n      |                         1\nWarning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 34 at (1)\n[repository]\\EOF\\eof.f90:738:19:\n\n  738 |       DO 36 K = 1,L\n      |                   1\nWarning: Fortran 2018 deleted feature: Shared DO termination label 36 at (1)\n[repository]\\EOF\\eof.f90:165:7:\n\n  152 |     IF (SPTL .eq. 1) GOTO 101\n      |                             2\n......\n  165 |     101 ALLOCATE(cov(sum(mask),sum(mask)))\n      |       1\nWarning: Legacy Extension: Label at (1) is not in the same block as the GOTO statement at (2)\n[repository]\\EOF\\eof.f90:204:7:\n\n  199 |     IF (SPTL .eq. 1) GOTO 102\n      |                             2\n......\n  204 |     102 ALLOCATE(d(sum(mask)),e(sum(mask)))\n      |       1\nWarning: Legacy Extension: Label at (1) is not in the same block as the GOTO statement at (2)\n[repository]\\EOF\\eof.f90:232:7:\n\n  214 |     IF (SPTL .eq. 1) GOTO 103\n      |                             2\n......\n  232 |     103 k=0\n      |       1\nWarning: Legacy Extension: Label at (1) is not in the same block as the GOTO statement at (2)\n[repository]\\EOF\\eof.f90:258:7:\n\n  251 |     IF (SPTL .eq. 1) GOTO 104\n      |                             2\n......\n  258 |     104 ALLOCATE(XX(SUM(mask),SIZE(X,2)))\n      |       1\nWarning: Legacy Extension: Label at (1) is not in the same block as the GOTO statement at (2)\n"
+  },
+  {
+    "path": "FInal/corr_ts2map.f90",
+    "exit_code": 0,
+    "diagnostics": ""
+  },
+  {
+    "path": "FInal/reg_btw2ts.f90",
+    "exit_code": 0,
+    "diagnostics": ""
+  },
+  {
+    "path": "FInal/reg_ts2map.f90",
+    "exit_code": 0,
+    "diagnostics": ""
+  },
+  {
+    "path": "gisang/ascii2binary.f90",
+    "exit_code": 0,
+    "diagnostics": ""
+  },
+  {
+    "path": "gisang/reg_ts2map.f90",
+    "exit_code": 0,
+    "diagnostics": ""
+  },
+  {
+    "path": "homework/composite.f90",
+    "exit_code": 0,
+    "diagnostics": ""
+  },
+  {
+    "path": "homework2/reg_ts2map.f90",
+    "exit_code": 0,
+    "diagnostics": ""
+  },
+  {
+    "path": "homework_3/correlogram.f90",
+    "exit_code": 0,
+    "diagnostics": ""
+  },
+  {
+    "path": "homework_3/eof.f90",
+    "exit_code": 0,
+    "diagnostics": "[repository]\\homework_3\\eof.f90:545:19:\n\n  545 |    14 E(I-1) = E(I)\n      |                   1\nWarning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 14 at (1)\n[repository]\\homework_3\\eof.f90:572:19:\n\n  572 |    22 D(I) = D(I)-H\n      |                   1\nWarning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 22 at (1)\n[repository]\\homework_3\\eof.f90:599:19:\n\n  599 |       DO 24 K = 1,N\n      |                   1\nWarning: Fortran 2018 deleted feature: Shared DO termination label 24 at (1)\n[repository]\\homework_3\\eof.f90:628:16:\n\n  628 |    32 Z(J,K) = P\n      |                1\nWarning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 32 at (1)\n[repository]\\homework_3\\eof.f90:664:19:\n\n  664 |       DO 10 J = 1,I\n      |                   1\nWarning: Fortran 2018 deleted feature: Shared DO termination label 10 at (1)\n[repository]\\homework_3\\eof.f90:665:21:\n\n  665 |    10 Z(I,J) = A(I,J)\n      |                     1\nWarning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 10 at (1)\n[repository]\\homework_3\\eof.f90:677:31:\n\n  677 |    12 SCALE = SCALE+ABS(Z(I,K))\n      |                               1\nWarning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 12 at (1)\n[repository]\\homework_3\\eof.f90:700:25:\n\n  700 |    20 G = G+Z(J,K)*Z(I,K)\n      |                         1\nWarning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 20 at (1)\n[repository]\\homework_3\\eof.f90:703:25:\n\n  703 |    22 G = G+Z(K,J)*Z(I,K)\n      |                         1\nWarning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 22 at (1)\n[repository]\\homework_3\\eof.f90:719:19:\n\n  719 |       DO 26 K = 1,J\n      |                   1\nWarning: Fortran 2018 deleted feature: Shared DO termination label 26 at (1)\n[repository]\\homework_3\\eof.f90:737:25:\n\n  737 |    34 G = G+Z(I,K)*Z(K,J)\n      |                         1\nWarning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 34 at (1)\n[repository]\\homework_3\\eof.f90:738:19:\n\n  738 |       DO 36 K = 1,L\n      |                   1\nWarning: Fortran 2018 deleted feature: Shared DO termination label 36 at (1)\n[repository]\\homework_3\\eof.f90:165:7:\n\n  152 |     IF (SPTL .eq. 1) GOTO 101\n      |                             2\n......\n  165 |     101 ALLOCATE(cov(sum(mask),sum(mask)))\n      |       1\nWarning: Legacy Extension: Label at (1) is not in the same block as the GOTO statement at (2)\n[repository]\\homework_3\\eof.f90:204:7:\n\n  199 |     IF (SPTL .eq. 1) GOTO 102\n      |                             2\n......\n  204 |     102 ALLOCATE(d(sum(mask)),e(sum(mask)))\n      |       1\nWarning: Legacy Extension: Label at (1) is not in the same block as the GOTO statement at (2)\n[repository]\\homework_3\\eof.f90:232:7:\n\n  214 |     IF (SPTL .eq. 1) GOTO 103\n      |                             2\n......\n  232 |     103 k=0\n      |       1\nWarning: Legacy Extension: Label at (1) is not in the same block as the GOTO statement at (2)\n[repository]\\homework_3\\eof.f90:258:7:\n\n  251 |     IF (SPTL .eq. 1) GOTO 104\n      |                             2\n......\n  258 |     104 ALLOCATE(XX(SUM(mask),SIZE(X,2)))\n      |       1\nWarning: Legacy Extension: Label at (1) is not in the same block as the GOTO statement at (2)\n"
+  },
+  {
+    "path": "icec/reg_ts2map.f90",
+    "exit_code": 0,
+    "diagnostics": ""
+  },
+  {
+    "path": "nonmun/ascii2binary.f90",
+    "exit_code": 0,
+    "diagnostics": ""
+  },
+  {
+    "path": "nonmun/reg_ts2map.f90",
+    "exit_code": 0,
+    "diagnostics": ""
+  },
+  {
+    "path": "nonmun2/ascii2binary.f90",
+    "exit_code": 0,
+    "diagnostics": ""
+  },
+  {
+    "path": "nonmunDJF/ascii2binary.f90",
+    "exit_code": 0,
+    "diagnostics": ""
+  },
+  {
+    "path": "nonmunDJF/reg_ts2map.f90",
+    "exit_code": 0,
+    "diagnostics": ""
+  },
+  {
+    "path": "nonmunJFM/ascii2binary.f90",
+    "exit_code": 0,
+    "diagnostics": ""
+  },
+  {
+    "path": "nonmunJFM/reg_ts2map.f90",
+    "exit_code": 0,
+    "diagnostics": ""
+  },
+  {
+    "path": "nonmunJFM/test.f90",
+    "exit_code": 0,
+    "diagnostics": ""
+  },
+  {
+    "path": "nonmunNDJ/ascii2binary.f90",
+    "exit_code": 0,
+    "diagnostics": ""
+  },
+  {
+    "path": "nonmunNDJ/reg_ts2map.f90",
+    "exit_code": 0,
+    "diagnostics": ""
+  },
+  {
+    "path": "partial_regression/part_reg_ts2map.f90",
+    "exit_code": 0,
+    "diagnostics": ""
+  },
+  {
+    "path": "partial_regression/reg_ts2map.f90",
+    "exit_code": 0,
+    "diagnostics": ""
+  },
+  {
+    "path": "regression/reg_btw2ts.f90",
+    "exit_code": 0,
+    "diagnostics": ""
+  },
+  {
+    "path": "regression/reg_ts2map.f90",
+    "exit_code": 0,
+    "diagnostics": ""
+  },
+  {
+    "path": "snow/ascii2binary.f90",
+    "exit_code": 0,
+    "diagnostics": ""
+  },
+  {
+    "path": "snow2/ascii2binary.f90",
+    "exit_code": 0,
+    "diagnostics": ""
+  },
+  {
+    "path": "snow2/reg_ts2map.f90",
+    "exit_code": 0,
+    "diagnostics": ""
+  },
+  {
+    "path": "snow3/ascii2binary.f90",
+    "exit_code": 0,
+    "diagnostics": ""
+  },
+  {
+    "path": "snow3/composite.f90",
+    "exit_code": 0,
+    "diagnostics": ""
+  },
+  {
+    "path": "snow3/reg_ts2map.f90",
+    "exit_code": 0,
+    "diagnostics": ""
+  },
+  {
+    "path": "snowday_comp/composite.f90",
+    "exit_code": 0,
+    "diagnostics": ""
+  },
+  {
+    "path": "snowday_reg/reg_ts2map.f90",
+    "exit_code": 0,
+    "diagnostics": ""
+  },
+  {
+    "path": "snowday_reg_sea_ice/reg_ts2map.f90",
+    "exit_code": 0,
+    "diagnostics": ""
+  },
+  {
+    "path": "snowdepth_comp/composite.f90",
+    "exit_code": 0,
+    "diagnostics": ""
+  },
+  {
+    "path": "snowdepth_reg/reg_ts2map.f90",
+    "exit_code": 0,
+    "diagnostics": ""
+  },
+  {
+    "path": "snowdepth_reg_sea_ice/reg_ts2map.f90",
+    "exit_code": 0,
+    "diagnostics": ""
+  },
+  {
+    "path": "spectral analysis/Code4SpectralAnalysis/correlogram.f90",
+    "exit_code": 1,
+    "diagnostics": "[repository]\\spectral analysis\\Code4SpectralAnalysis\\correlogram.f90:328:132:\n\n  328 |   DATA cof,stp /76.18009172947146d0,-86.50532032941677d0,24.01409824083091d0,-1.231739572450155d0,.1208650973866179d-2,-.5395239384953d-5,2.506628746310005d0/\n      |                                                                                                                                    1\nError: Line truncated at (1) [-Werror=line-truncation]\n[repository]\\spectral analysis\\Code4SpectralAnalysis\\correlogram.f90:328:132:\n\n  328 |   DATA cof,stp /76.18009172947146d0,-86.50532032941677d0,24.01409824083091d0,-1.231739572450155d0,.1208650973866179d-2,-.5395239384953d-5,2.506628746310005d0/\n      |                                                                                                                                    1\nError: Syntax error in DATA statement at (1)\nf951.exe: some warnings being treated as errors\n",
+    "extended_line_length_check": {
+      "exit_code": 0,
+      "diagnostics": ""
+    }
+  },
+  {
+    "path": "test/reg_ts2map.f90",
+    "exit_code": 0,
+    "diagnostics": ""
+  },
+  {
+    "path": "test111/correlogram.f90",
+    "exit_code": 0,
+    "diagnostics": ""
+  },
+  {
+    "path": "test2/reg_btw2ts.f90",
+    "exit_code": 0,
+    "diagnostics": ""
+  }
+]
