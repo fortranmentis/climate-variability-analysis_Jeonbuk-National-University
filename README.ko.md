@@ -61,6 +61,37 @@ flowchart LR
 
 코드에서 확인되는 작업 흐름을 정리한 것으로, 전체를 실행하는 단일 자동화 파이프라인은 없습니다.
 
+## GrADS scripts · .gs 파일의 역할과 실행
+
+**`.gs` 231개**는 기후 원자료와 Fortran 계산, 결과 그림을 연결합니다. 공간·기간 선택, 월별 기후 평균과 편차 계산, 계절·영역 지수 생성, 바이너리 입력 저장, 통계 결과의 지도 작성까지 담당합니다. 별도로 `.gsf` 함수 파일 1개가 있습니다.
+
+| 역할 | 대표 파일 | 확인할 내용 |
+|---|---|---|
+| 기후장 전처리 | [`nonmunJFM/make_data_sst.gs`](nonmunJFM/make_data_sst.gs), [`make_sst_jan/mk_data_sst.gs`](make_sst_jan/mk_data_sst.gs) | NetCDF 입력, 월별 기준 평균, 편차, 연도별 추출, `.gdat` 저장 |
+| 기후 지수 생성 | [`regression/mk_Nino_index.gs`](regression/mk_Nino_index.gs) | 190–240°E·5°S–5°N 영역 평균, 월별 편차, 12월 중심 3개월 평균 |
+| 통계 확인 | [`regression/reg_btw2ts.gs`](regression/reg_btw2ts.gs), [`regression/draw_scatter.gs`](regression/draw_scatter.gs) | 회귀 기울기 수식과 두 지수의 산점도 |
+| 회귀 지도 | [`2001jjSSTwind/draw_reg_snow_sst.gs`](2001jjSSTwind/draw_reg_snow_sst.gs) | SST·동서풍·남북풍 입력, 파일 번호, 음영·벡터·확률 마스크, PNG 출력 |
+| 공간 모드 | [`EOF/draw_eof.gs`](EOF/draw_eof.gs) | EOF1·EOF2 공간장, PC1·PC2 시계열, 고유값 비율과 패널 배치 |
+| 시각화 보조 | `basemap.gs`, `cbarm.gs`, `clevsjy*.gs`, `dots.gs`, `subplot.gs` | 지도 마스크, 컬러바, 색상 구간, 점 표시와 다중 패널 |
+| 추세 함수 | [`snow/ltrend.gs`](snow/ltrend.gs), [`snow/qdims.gsf`](snow/qdims.gsf) | 선형 추세 계산, 차원 조회, `.gs`와 `.gsf`의 연결 |
+
+예를 들어 `nonmunJFM/make_data_sst.gs`는 SST를 열고 월별 기후 평균을 구한 뒤 편차와 중심 3개월 평균을 계산합니다. 이후 1983–2020년의 2월 중심 값을 `sst_JFM_-12.gdat`에 저장하므로 실제 평균 월은 1–3월입니다. 파일명의 지연 표기는 후속 강설 지수의 기준 연도와 별도로 맞춰야 합니다. 이 전처리 설정이 Fortran 분석 결과의 의미를 결정합니다.
+
+실행은 실험 폴더에서 **GrADS를 시작한 뒤** 진행합니다.
+
+```bash
+cd EOF
+grads -l
+```
+
+GrADS 프롬프트에서 `run draw_eof.gs`를 입력합니다. 이 예제는 같은 폴더의 `subplot.gs`를 이용해 저장된 EOF 결과를 표시하며, EOF 자체를 다시 계산하지 않습니다.
+
+[상세 한국어 가이드](docs/GRADS_GUIDE.ko.md)에 명령문과 스크립트 변수의 차이, 입력·출력 흐름, 파일 번호, 바이너리 형식, 보조 함수와 실행 절차를 정리했습니다. [English guide](docs/GRADS_GUIDE.md)도 제공합니다.
+
+**정적 경로 점검:** 인식한 `open`·`sdfopen`·`xdfopen` 명령 147건 중 스크립트 폴더 기준 존재 97건, 환경별 절대경로 40건, 없는 상대경로 10건입니다. 이는 CTL 613개의 데이터 참조가 모두 존재한다는 점검과 별개입니다. CTL이 유효해도 `.gs`에서 다른 CTL이나 경로를 열면 실행되지 않습니다. GrADS 실행 자체는 미검증입니다.
+
+[전체 스크립트 목록](docs/grads_scripts.csv), [입력 경로 점검표](docs/grads_input_references.csv), [정적 점검 요약](docs/grads_audit.json)을 제공합니다. `.gs`·`.gsf` 232개에 대한 역할 분류는 보조 함수 119개, 자료 저장·혼합 작업 47개, 분석·표시 66개이며, 전체 언어 구문을 해석한 결과는 아닙니다.
+
 ## Repository map · 폴더 안내
 
 | 폴더 | 역할 |

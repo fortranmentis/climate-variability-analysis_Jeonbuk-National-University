@@ -15,7 +15,7 @@ Research and coursework archive associated with Jeonbuk National University
 
 **English** · [한국어](README.ko.md)
 
-[About](#about) · [Highlights](#highlights) · [Gallery](#gallery) · [Quick start](#quick-start) · [Validation](#validation) · [Notes](#notes)
+[About](#about) · [Highlights](#highlights) · [Gallery](#gallery) · [GrADS scripts](#grads-scripts) · [Quick start](#quick-start) · [Validation](#validation) · [Notes](#notes)
 
 </div>
 
@@ -68,6 +68,35 @@ flowchart LR
 ```
 
 This describes the patterns visible in the scripts. It is not a single automated pipeline.
+
+## GrADS scripts
+
+The **231 `.gs` files** are the bridge between climate datasets, Fortran calculations, and scientific figures. They select spatial/time domains, calculate climatologies and anomalies, form seasonal or regional indices, export binary inputs, and render statistical outputs. One additional `.gsf` file supplies a script function.
+
+| Role | Representative scripts | What to inspect |
+|---|---|---|
+| Climate-field preparation | [`nonmunJFM/make_data_sst.gs`](nonmunJFM/make_data_sst.gs), [`make_sst_jan/mk_data_sst.gs`](make_sst_jan/mk_data_sst.gs) | NetCDF input, monthly baseline, anomaly definition, annual sampling, `.gdat` output |
+| Climate indices | [`regression/mk_Nino_index.gs`](regression/mk_Nino_index.gs) | Area mean over 190–240°E, 5°S–5°N, monthly anomalies, and December-centered three-month averages |
+| Statistical inspection | [`regression/reg_btw2ts.gs`](regression/reg_btw2ts.gs), [`regression/draw_scatter.gs`](regression/draw_scatter.gs) | Regression-slope expression and paired-index scatterplot |
+| Regression maps | [`2001jjSSTwind/draw_reg_snow_sst.gs`](2001jjSSTwind/draw_reg_snow_sst.gs) | Three opened fields, dataset suffixes, shaded SST, vector layer, probability masks, PNG export |
+| Spatial modes | [`EOF/draw_eof.gs`](EOF/draw_eof.gs) | EOF1/EOF2 patterns, PC1/PC2 series, eigenvalue percentages, and panel layout |
+| Shared plotting functions | `basemap.gs`, `cbarm.gs`, `clevsjy*.gs`, `dots.gs`, `subplot.gs` | Map masks, color scales, significance dots, palettes, and figure layout |
+| Trend functions | [`snow/ltrend.gs`](snow/ltrend.gs), [`snow/qdims.gsf`](snow/qdims.gsf) | Fitted trend, dimension queries, and the `.gs`/`.gsf` dependency |
+
+For example, `nonmunJFM/make_data_sst.gs` opens SST, constructs a calendar-month climatology, subtracts it, computes a centered three-month average, and writes February samples for 1983–2020 to `sst_JFM_-12.gdat`. The February center makes these January–March means; the filename's lag label still needs alignment with the downstream snow index. These preprocessing choices determine the scientific meaning of subsequent Fortran results.
+
+Run scripts **inside GrADS**, from their experiment directory:
+
+```bash
+cd EOF
+grads -l
+```
+
+At the GrADS prompt, use `run draw_eof.gs`. This example displays archived EOF outputs using the local `subplot.gs`; it does not recompute EOFs. The [detailed guide](docs/GRADS_GUIDE.md) explains quoted commands versus script variables, file numbering, output formats, helper lookup, and reproducible run procedures. An equivalent [한국어 가이드](docs/GRADS_GUIDE.ko.md) is available.
+
+**Static path audit:** 147 recognized `open`/`sdfopen`/`xdfopen` command occurrences include 97 paths present relative to their script directory, 40 workstation-specific absolute paths, and 10 absent relative targets. This is distinct from the successful CTL-to-data audit: a valid descriptor does not guarantee that a script opens the correct descriptor. GrADS execution remains untested.
+
+Browse the [complete script catalogue](docs/grads_scripts.csv), [input-reference audit](docs/grads_input_references.csv), and [scan summary](docs/grads_audit.json). Role hints classify 119 helper files, 47 data-export/mixed workflows, and 66 analysis/display scripts across the 232 `.gs`/`.gsf` files; the scan is not a full language parser.
 
 ## Repository map
 

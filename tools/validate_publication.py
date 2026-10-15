@@ -18,7 +18,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def main():
     errors = []
-    markdowns = [ROOT / f for f in ('README.md', 'README.ko.md', 'VALIDATION.md', 'docs/DATA_AND_REUSE.md')]
+    markdowns = sorted([*ROOT.glob('*.md'), *(ROOT / 'docs').rglob('*.md')])
     links = 0
     for path in markdowns:
         text = path.read_text(encoding='utf-8')

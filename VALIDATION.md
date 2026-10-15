@@ -73,6 +73,14 @@ The original inventory includes excluded transient files that will not exist in 
 
 ## Boundaries
 
+### GrADS source inspection added on 2026-10-15
+
+The [English](docs/GRADS_GUIDE.md) and [Korean](docs/GRADS_GUIDE.ko.md) script guides trace representative preprocessing, index, regression-map, and EOF-display workflows. A rerunnable static scanner catalogues 231 `.gs` files and one `.gsf` file. Its 147 recognized input-command occurrences include 97 targets present beside/relative to the script, 40 absolute paths requiring environment review, and 10 absent relative targets. See [grads_audit.json](docs/grads_audit.json), [grads_scripts.csv](docs/grads_scripts.csv), and [grads_input_references.csv](docs/grads_input_references.csv).
+
+The check assumes the script directory is the working directory and is not a full GrADS parser. In particular, it does not resolve runtime command generation or installed helper libraries. The original `.gs` / `.gsf` files are unchanged. GrADS was not found on the inspected PATH, and no GrADS script or figure regeneration was executed. Source inspection additionally identified a wind-vector expression using `prob` fields and a snow-day plot with a `[%/cm]` label; these require scientific review before figure reuse, and are documented rather than repaired.
+
+### Remaining validation boundaries
+
 The following remain unverified:
 
 - End-to-end operation across all directories and all source/input combinations.

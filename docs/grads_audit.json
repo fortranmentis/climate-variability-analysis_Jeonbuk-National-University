@@ -1,0 +1,19 @@
+{
+  "scripts": 232,
+  "extensions": {
+    ".gs": 231,
+    ".gsf": 1
+  },
+  "role_hints": {
+    "data_export_or_mixed_workflow": 47,
+    "helper": 119,
+    "analysis_or_display": 66
+  },
+  "input_command_occurrences": 147,
+  "input_reference_status": {
+    "present_beside_script": 97,
+    "absolute_path_requires_review": 40,
+    "missing_beside_script": 10
+  },
+  "scope": "Static scan of leading single-quoted commands only. Paths are checked against each script directory, assuming that working directory. Dynamic script logic, unquoted expressions, GASCRP, and runtime behavior are not validated."
+}

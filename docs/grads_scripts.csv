@@ -1,0 +1,233 @@
+path,extension,role_hint,sha256,features,input_commands,output_commands,helper_calls
+2001geo/make_data_sst.gs,.gs,data_export_or_mixed_workflow,58688d2efd96561a07795261947c7985dc1716adbda2cfb90ed27f77e9d8beb1,binary_export | seasonal_climatology,2: sdfopen ../2001geo/hgt.mon.mean.nc,20: set fwrite geo(-12).gdat,
+2001gsgeoair/basemap.gs,.gs,helper,23828e7b344f7d96195893f6e9eebae3ec5b81484affdd9afd5008b6396a8d7a,,,,
+2001gsgeoair/cbarm.gs,.gs,helper,0eca9f4f28c1c242574f656d93e8d1271a37a69780d7e99f97fba307faa3a947,,,,
+2001gsgeoair/clevsjy.gs,.gs,helper,d56a5895a9a5adc3683b4c03ef7e5c9fe6c99c13d8b1f00605c57f4664b126ec,,,,12: rgbset_mod
+2001gsgeoair/dots.gs,.gs,helper,8f31fa8e560acb18a015de8d658e0543870e12d8feee3d1fcda5964685106e42,,,,
+2001gsgeoair/draw_reg_snow_sst.gs,.gs,analysis_or_display,ab3e6b09d3e5cd2c4e825aa584b646df8108d4adc83aed9fc42b3ed07992c671,image_export | maskout,3: open reg_gs_air-12.ctl | 4: open reg_gs_geo-12.ctl,36: printim ./reg_gs_air_geo(-12).png x2000 y1600 white,11: basemap L 0 1 L | 15: clevsjy 0.12 0.55 | 17: cbarm | 22: dots airsig 0.04 2    2    1
+2001gsSSTwind/basemap.gs,.gs,helper,23828e7b344f7d96195893f6e9eebae3ec5b81484affdd9afd5008b6396a8d7a,,,,
+2001gsSSTwind/cbarm.gs,.gs,helper,0eca9f4f28c1c242574f656d93e8d1271a37a69780d7e99f97fba307faa3a947,,,,
+2001gsSSTwind/clevsjy.gs,.gs,helper,d56a5895a9a5adc3683b4c03ef7e5c9fe6c99c13d8b1f00605c57f4664b126ec,,,,12: rgbset_mod
+2001gsSSTwind/dots.gs,.gs,helper,8f31fa8e560acb18a015de8d658e0543870e12d8feee3d1fcda5964685106e42,,,,
+2001gsSSTwind/draw_reg_snow_sst.gs,.gs,analysis_or_display,14d5278cd477909b08632514f0c407058c76c8f0f66cf23e4a25a279dd88d5e9,image_export | maskout,3: open reg_gs_sst-12.ctl | 4: open reg_gs_uwnd-12.ctl | 5: open reg_gs_vwnd-12.ctl,37: printim ./reg_gs_SST_wind(-12).png x4000 y3600 white,15: clevsjy 0.01 0.015 | 19: dots sigsst 0.02 2    2    1 | 20: basemap L 0 1 L | 21: cbarm | 34: run cbarm 1 1
+2001jjgeoair/basemap.gs,.gs,helper,23828e7b344f7d96195893f6e9eebae3ec5b81484affdd9afd5008b6396a8d7a,,,,
+2001jjgeoair/cbarm.gs,.gs,helper,0eca9f4f28c1c242574f656d93e8d1271a37a69780d7e99f97fba307faa3a947,,,,
+2001jjgeoair/clevsjy.gs,.gs,helper,d56a5895a9a5adc3683b4c03ef7e5c9fe6c99c13d8b1f00605c57f4664b126ec,,,,12: rgbset_mod
+2001jjgeoair/dots.gs,.gs,helper,8f31fa8e560acb18a015de8d658e0543870e12d8feee3d1fcda5964685106e42,,,,
+2001jjgeoair/draw_reg_snow_sst.gs,.gs,analysis_or_display,bd0aec760dda32fee327055e80c96110d033fa9ed0ef479824a4871f6ca14443,image_export | maskout,3: open reg_jj_air-0.ctl | 4: open reg_jj_geo-0.ctl,36: printim ./reg_jj_air_geo(-0).png x2000 y1600 white,11: basemap L 0 1 L | 15: clevsjy 0.12 0.55 | 17: cbarm | 22: dots airsig 0.04 2    2    1
+2001jjSSTwind/basemap.gs,.gs,helper,23828e7b344f7d96195893f6e9eebae3ec5b81484affdd9afd5008b6396a8d7a,,,,
+2001jjSSTwind/cbarm.gs,.gs,helper,0eca9f4f28c1c242574f656d93e8d1271a37a69780d7e99f97fba307faa3a947,,,,
+2001jjSSTwind/clevsjy.gs,.gs,helper,d56a5895a9a5adc3683b4c03ef7e5c9fe6c99c13d8b1f00605c57f4664b126ec,,,,12: rgbset_mod
+2001jjSSTwind/dots.gs,.gs,helper,8f31fa8e560acb18a015de8d658e0543870e12d8feee3d1fcda5964685106e42,,,,
+2001jjSSTwind/draw_reg_snow_sst.gs,.gs,analysis_or_display,9f40777ae736588540de2e9d08ee9c065b8f9de5d9c5c5b020576ee0d2a11977,image_export | maskout,3: open reg_jj_sst-0.ctl | 4: open reg_jj_uwnd-0.ctl | 5: open reg_jj_vwnd-0.ctl,37: printim ./reg_jj_SST_wind(-0).png x4000 y3600 white,15: clevsjy 0.015 0.02 | 19: dots sigsst 0.02 2    2    1 | 20: basemap L 0 1 L | 21: cbarm | 34: run cbarm 1 1
+2001sst/make_data_sst.gs,.gs,data_export_or_mixed_workflow,eda86ec39dde15e5602eff27a9693be173dafaaa526ceceb358e73a042b61afb,binary_export | seasonal_climatology,2: sdfopen ../2001sst/sst.mnmean.nc,20: set fwrite sst-12.gdat,
+auto_correlation/mk_Jeonju_precip_index.gs,.gs,data_export_or_mixed_workflow,f4173f6886b7fa5e67b352589dd46bc32c13b0c0af8c2b823a952fc43bc7e4c0,binary_export | seasonal_climatology,2: open Jeonju_1980-2019.ctl,20: set fwrite Jeonju_precip_monthly_JAN1982-DEC2018.gdat,
+auto_correlation/mk_Nino_index.gs,.gs,data_export_or_mixed_workflow,839539fb0788c0b4908d914a6a8b0250b531ec487ac292777ef6db6f4526f331,area_average | binary_export | seasonal_climatology,2: sdfopen /home/sang9604/climate_analysis/Data/sst.mnmean.nc,20: set fwrite Nino_index_montly_JAN1982-DEC2018.gdat,
+auto_correlation/test.gs,.gs,analysis_or_display,e072d7cf959b27caaa17f209acc75144530ee2c47b92fa4e81776218df4c3de5,maskout,2: open correlogram.ctl,,
+composite/cbarm.gs,.gs,helper,0eca9f4f28c1c242574f656d93e8d1271a37a69780d7e99f97fba307faa3a947,,,,
+composite/draw_composite.gs,.gs,analysis_or_display,dd352d8e4409d7824e399160f12acebe8e9b13bc7c9b25928babf84062458362,maskout,2: open sst_DEC_composite-Jeonju_precip.ctl,,
+composite/mk_data_sst.gs,.gs,data_export_or_mixed_workflow,5c2f4cc38a5d450c4867fa8369db969cb6bc0284e49cdf610d94233325b548d0,binary_export | seasonal_climatology,2: sdfopen /home/sang9604/climate_analysis/Data/sst.mnmean.nc,20: set fwrite sst_DEC_1982-2018.gdat,
+correlation/basemap.gs,.gs,helper,e362475f149fed006527805faeef20a297722274ec96f58a589e1e228e085aff,,,,
+correlation/cbarm.gs,.gs,helper,0eca9f4f28c1c242574f656d93e8d1271a37a69780d7e99f97fba307faa3a947,,,,
+correlation/clevsjy2.gs,.gs,helper,a595ad817bf481db1855f01a83c2d3227e7c719aff6de33dd98fba1e8a58bc65,,,,
+correlation/draw_aod_wspd.gs,.gs,analysis_or_display,22c90539890eefa2adaf881b70b952ca6d0543f588bb1f6a6799842f64793a1c,,2: open corr_aod_wspd_jb.gdat.ctl,,
+correlation/draw_correlation_map.gs,.gs,analysis_or_display,74124cbdc2e155d5b5946cb640aee212cc685df75b9b2e7005ab8dd1c3538ade,image_export | maskout,3: open sst_NDJ_regressed_onto_Jeonju_precip.ctl,13: printim ./sst_NDJ_correlation_Jeonju_precip.png white,6: clevsjy2 0.1 | 10: basemap L 15 1 L | 11: cbarm
+correlation/make_data_sst.gs,.gs,data_export_or_mixed_workflow,2bce8a5c610f6aea26568775bf09fa50ac306d0b4181e10046295b236feb3f2b,binary_export | seasonal_climatology,2: sdfopen ../Data/sst.mnmean.nc,20: set fwrite sst_NDJ_1982-2018.gdat,
+correlation/TEST1.gs,.gs,data_export_or_mixed_workflow,3e0145ebb6999a2c7eb0203aca0d21397376e5fa1836879e8382643713c197dd,area_average | binary_export | seasonal_climatology,2: open AOD_MODIS_1deg_MAR2000-FEB2019.ctl,18: set fwrite aod_JB_oct_2001-2018.gdat,
+correlation/TEST2.gs,.gs,data_export_or_mixed_workflow,1a281a528585cc2b9ee8c741c2eb405c5b733597a86ac811361d6b0227a0e24c,binary_export | seasonal_climatology,2: sdfopen wspd.mon.mean.nc,21: set fwrite wspd_OCT_2001-2018.gdat,
+Data/cbarm.gs,.gs,helper,0eca9f4f28c1c242574f656d93e8d1271a37a69780d7e99f97fba307faa3a947,,,,
+Data/draw_teat.gs,.gs,analysis_or_display,7e7e416f427a18a59a752f78c5960a6538a0d9260839c2e119d20bf09111ff83,,3: sdfopen sst.mnmean.nc | 4: sdfopen precip.mon.mean.nc | 5: sdfopen uwnd.mon.mean.nc | 6: sdfopen vwnd.mon.mean.nc,,
+Data/draw_test2.gs,.gs,analysis_or_display,1a59c129e6137ad0e4b973edb19fbad46f2ab4fdcdb043a4c7bcc855cbbdecef,,3: sdfopen uwnd.mon.mean.nc | 4: sdfopen vwnd.mon.mean.nc,,
+EOF/draw_eof.gs,.gs,analysis_or_display,cbb2a92de4510e119c1654fd7d1133db4d8154f259a27637603460e8291f8905,,2: open ev_sst.ctl | 3: open pct_sst.ctl | 4: open pv_sst.ctl,,"7: subplot 23 ""EOF1"" 1 | 11: subplot 23 ""EOF2"" 2 | 16: subplot 23 ""PC1"" 3 | 24: subplot 23 ""PC2"" 4 | 30: subplot 33 ""EV"" 8"
+EOF/mk_Nino_index.gs,.gs,data_export_or_mixed_workflow,a6705db21105b3e3e9382adcd4cf522647c6d8a6790bd38374d9f3082186ba48,binary_export | seasonal_climatology,2: sdfopen /home/sang9604/climate_analysis/Data/sst.mnmean.nc,20: set fwrite sst_mon_amon_JAN1982-DEC2018.gdat,
+EOF/subplot.gs,.gs,helper,5734517b95febb8c72edb6dbcb4ce828686ad0e0a8e849ff884ad68d5842bae4,,,,
+FInal/basemap.gs,.gs,helper,e362475f149fed006527805faeef20a297722274ec96f58a589e1e228e085aff,,,,
+FInal/cbarm.gs,.gs,helper,0eca9f4f28c1c242574f656d93e8d1271a37a69780d7e99f97fba307faa3a947,,,,
+FInal/clevsjy2.gs,.gs,helper,a595ad817bf481db1855f01a83c2d3227e7c719aff6de33dd98fba1e8a58bc65,,,,
+FInal/mk_olr.gs,.gs,data_export_or_mixed_workflow,f4e18a310a2294fc5ec7e7ab7726c89a79b142b6396bcc5ca43c2b2518b8edb1,area_average | binary_export | seasonal_climatology,2: sdfopen /home/sang9604/climate_analysis/FInal/olr.mon.mean.nc,19: set fwrite olr_index_JJA_1990-2018.gdat,
+FInal/mk_olr2.gs,.gs,data_export_or_mixed_workflow,7a4e5de7dacd259e5a401a974c32652b0faa0a4a1e650cfb5306da0736103624,binary_export | seasonal_climatology,2: sdfopen /home/sang9604/climate_analysis/FInal/olr.mon.mean.nc,18: set fwrite olr_JJA_1990-2018.gdat,
+FInal/mk_precip.gs,.gs,data_export_or_mixed_workflow,fde18b590af5510f66b480d829b982b145a6606a6e312de91cea919e5b1b4d5c,binary_export | seasonal_climatology,2: sdfopen /home/sang9604/climate_analysis/FInal/precip.mon.mean.nc,19: set fwrite pre_NDJ_1990-2018.gdat,
+FInal/mk_precip2.gs,.gs,data_export_or_mixed_workflow,1a5404f2d6a22416e1b5a05e860091fd8f0533504daf66c91fcf4342f2702c62,binary_export | seasonal_climatology,2: sdfopen /home/sang9604/climate_analysis/FInal/precip.mon.mean.nc,19: set fwrite pre_JJA_1990-2018.gdat,
+FInal/mk_salt.gs,.gs,data_export_or_mixed_workflow,6a5eaf5d18ce2db0188d02c5000e98fe7e18b4871cc59edaafe5eb1d53fee448,binary_export | seasonal_climatology,2: sdfopen /home/sang9604/climate_analysis/FInal/salt.1980-2019.nc,18: set fwrite salt_JJA_1990-2018.gdat,
+FInal/mk_soilw.gs,.gs,data_export_or_mixed_workflow,8707960d701694e6d19adba12acf568a056d4bb8d89f9d953ea7a8f06d366f70,binary_export | seasonal_climatology,2: sdfopen /home/sang9604/climate_analysis/FInal/soilw_1deg.nc,21: set fwrite soilw_JJA_1990-2018.gdat,
+FInal/mk_sst.gs,.gs,data_export_or_mixed_workflow,74e6048a5c245fb6baefda92f68104a81bb32e4fdff50865f698d1c060204d71,binary_export | seasonal_climatology,2: sdfopen /home/sang9604/climate_analysis/FInal/sst.mnmean.nc,19: set fwrite sst_JJA_1990-2018.gdat,
+FInal/mk_sst2.gs,.gs,data_export_or_mixed_workflow,a42ec4239af63bd5c015874d1915df1509c1ed56748f8e0f9f707053e93ef92f,binary_export | seasonal_climatology,2: sdfopen /home/sang9604/climate_analysis/FInal/sst.mnmean.nc,19: set fwrite sst_NDJ_1990-2018.gdat,
+FInal/TEST2.gs,.gs,data_export_or_mixed_workflow,e35ff5aade2c4c01603990337d33f2ae23f935c5aa59ebdaab9b25e7da1ec6b8,area_average | binary_export | seasonal_climatology,2: sdfopen /home/sang9604/climate_analysis/FInal/precip.mon.mean.nc,19: set fwrite precip_ind.gdat,
+FInal/TEST3.gs,.gs,data_export_or_mixed_workflow,2e1229b77d9ffa25571a58a98c661fbeda99d74a32c4ccc994660bf796a59212,area_average | binary_export | seasonal_climatology,2: sdfopen /home/sang9604/climate_analysis/FInal/soilw_1deg.nc,19: set fwrite soilw_ind.gdat,
+FInal/TEST4.gs,.gs,data_export_or_mixed_workflow,4303d840436af006dd9f7e99a24bb96f35f92e897ec3f599e64d072ef15b35c7,area_average | binary_export | seasonal_climatology,2: sdfopen /home/sang9604/climate_analysis/FInal/sst.mnmean.nc,19: set fwrite sst_ind.gdat,
+FInal/TEST5.gs,.gs,data_export_or_mixed_workflow,4bf57dbc37b095318eef50761d4bb3cbe87c87f5b5276cbed4e53ad4ea8a3750,area_average | binary_export | seasonal_climatology,2: sdfopen /home/sang9604/climate_analysis/FInal/olr.mon.mean.nc,19: set fwrite olr_ind.gdat,
+gisang/basemap.gs,.gs,helper,23828e7b344f7d96195893f6e9eebae3ec5b81484affdd9afd5008b6396a8d7a,,,,
+gisang/cbarm.gs,.gs,helper,0eca9f4f28c1c242574f656d93e8d1271a37a69780d7e99f97fba307faa3a947,,,,
+gisang/clevsjy.gs,.gs,helper,d56a5895a9a5adc3683b4c03ef7e5c9fe6c99c13d8b1f00605c57f4664b126ec,,,,12: rgbset_mod
+gisang/draw_comp_snow_sst.gs,.gs,analysis_or_display,a3ec82f76cb22d04a79f19a7af81bcf6e09c2edfd4550d7fff1899a7ac9d1e36,image_export | maskout,2: open sst_NDJ_corr_wind.ctl,15: printim ./SNOW_JAN_comp_SST_ASO.png white,9: clevsjy 0.075 0.1 | 11: basemap L 15 1 L | 12: cbarm
+gisang/draw_scatter.gs,.gs,analysis_or_display,a16ff7c6bda96fc3cfe1db0d4c8d0f0a2e5e9c6d1337cd0b3f605e51faf38934,image_export,2: open wind.ctl,21: printim ./wind.png x2000 y1600 white,
+gisang/make_data_sst.gs,.gs,data_export_or_mixed_workflow,1a205bca41bd97807f16ec8a365b35c198a6b346235fb9795f0160f06c75776c,binary_export | seasonal_climatology,2: sdfopen /home/sang9604/climate_analysis/gisang/sst.mnmean.nc,20: set fwrite sst_NDJ_1981-2019.gdat,
+gisang/rgbset.gs,.gs,helper,2cf01d82bab60bddbbe30587bf6ef792a9799b8b4f724f222d22b4aed5f9b4d6,,,,
+gragh/draw_snowday.gs,.gs,analysis_or_display,4467ad54d17cb5fe44f4f5ef2e782e920fd5221fabec3e112872a964d9506602,image_export,3: open snowday.ctl,46: printim ./DJF_snowday_SD.png x4000 y3600 white,
+gragh/draw_snowdepth.gs,.gs,analysis_or_display,c567ff04f0220070af73b962696978e5de69b0847ef7b0cf71ffa46c7148e8b5,image_export,3: open snowdepth.ctl,46: printim ./DJF_snowdepth_SD.png x4000 y3600 white,
+homework/44444.gs,.gs,analysis_or_display,74a18e289afd26b226a8245b694db291d1cddb28aa2b18ed1d82f8d947933abf,maskout,2: open nino_precip.ctl,,12: cbarm
+homework/cbarm.gs,.gs,helper,0eca9f4f28c1c242574f656d93e8d1271a37a69780d7e99f97fba307faa3a947,,,,
+homework/mk_precip.gs,.gs,data_export_or_mixed_workflow,eda504bc22923963e74a5ca11f2df27b19b4d0abb9bc76e0927b1aa6a31a67bd,binary_export | seasonal_climatology,2: sdfopen /home/sang9604/climate_analysis/Data/precip.mon.mean.nc,22: set fwrite precip_test.gdat,
+homework/TEST1.gs,.gs,data_export_or_mixed_workflow,f70909d3b12507831b5f6eb3438b16141ff65450c356f13f742b6e9c3df5c554,area_average | binary_export | seasonal_climatology,2: sdfopen /home/sang9604/climate_analysis/Data/sst.mnmean.nc,19: set fwrite Nino_index_NDJ_1982-2018.gdat,
+homework2/44444.gs,.gs,analysis_or_display,016a4d47177243ced16b28cd6033bc342937c298e9529535e297d5cc5994bf67,maskout,2: open regress_nino_precip.ctl,,9: cbarm
+homework2/cbarm.gs,.gs,helper,0eca9f4f28c1c242574f656d93e8d1271a37a69780d7e99f97fba307faa3a947,,,,
+homework2/mk_precip.gs,.gs,data_export_or_mixed_workflow,eda504bc22923963e74a5ca11f2df27b19b4d0abb9bc76e0927b1aa6a31a67bd,binary_export | seasonal_climatology,2: sdfopen /home/sang9604/climate_analysis/Data/precip.mon.mean.nc,22: set fwrite precip_test.gdat,
+homework2/TEST1.gs,.gs,data_export_or_mixed_workflow,f70909d3b12507831b5f6eb3438b16141ff65450c356f13f742b6e9c3df5c554,area_average | binary_export | seasonal_climatology,2: sdfopen /home/sang9604/climate_analysis/Data/sst.mnmean.nc,19: set fwrite Nino_index_NDJ_1982-2018.gdat,
+homework_3/44444.gs,.gs,analysis_or_display,d91f23a077a02003725b8915b031b5be77013683bbe2c7fdbb59c46e0cda9659,maskout,2: open correlogram.ctl,,
+homework_3/draw_eof.gs,.gs,analysis_or_display,6a367abf8adcd80aeda1e1cb4b9bc68ea96fd1b33daa102e053e13dcd6da2366,,2: open ev_slp.ctl | 3: open pct_slp.ctl | 4: open pv_slp.ctl,,"7: subplot 23 ""EOF1"" 1 | 11: subplot 23 ""EOF2"" 2 | 16: subplot 23 ""PC1"" 3 | 24: subplot 23 ""PC2"" 4 | 30: subplot 33 ""EV"" 8"
+homework_3/make_data_slp.gs,.gs,data_export_or_mixed_workflow,12512d5ad21b6a0a81988cbfd3d8d048d5ce7845e020b536832fe5e529513df3,binary_export | seasonal_climatology,2: sdfopen /home/sang9604/climate_analysis/partial_regression/mslp.mon.mean.nc,20: set fwrite slp_DJF_1982-2018.gdat,
+homework_3/subplot.gs,.gs,helper,5734517b95febb8c72edb6dbcb4ce828686ad0e0a8e849ff884ad68d5842bae4,,,,
+icec/basemap.gs,.gs,helper,23828e7b344f7d96195893f6e9eebae3ec5b81484affdd9afd5008b6396a8d7a,,,,
+icec/cbarm.gs,.gs,helper,0eca9f4f28c1c242574f656d93e8d1271a37a69780d7e99f97fba307faa3a947,,,,
+icec/clevsjy.gs,.gs,helper,d56a5895a9a5adc3683b4c03ef7e5c9fe6c99c13d8b1f00605c57f4664b126ec,,,,12: rgbset_mod
+icec/draw_corr_snow_sst.gs,.gs,analysis_or_display,f55e19a3e75ccbdeb08fd9849c378a6e6fdb03fb6c9f6f3c7ee1ffcb6464cc3a,image_export | maskout,2: open reg_snowday_JAN_icec_MAR-10.ctl,16: printim ./snowday_JAN_reg_icec_MAR-10.png x4000 y3090 white,9: clevsjy 0.3 1 | 11: basemap L 15 1 L | 13: cbarm
+icec/mk_data_ice.gs,.gs,data_export_or_mixed_workflow,473c639d16942cd282e9939b2530863eb6be75fa0f06fc9e7a9f3a70b3760b21,binary_export | seasonal_climatology,2: sdfopen ../icec/icec.mnmean.nc,20: set fwrite icec_DJF-12.gdat,
+icec_day/basemap.gs,.gs,helper,23828e7b344f7d96195893f6e9eebae3ec5b81484affdd9afd5008b6396a8d7a,,,,
+icec_day/cbarm.gs,.gs,helper,0eca9f4f28c1c242574f656d93e8d1271a37a69780d7e99f97fba307faa3a947,,,,
+icec_day/cbarm0.gs,.gs,helper,75d1c7e2ce6fb889c25f0e432f02a607d52f5c4ff8044aadc04fb4d651d8cb28,,,,
+icec_day/clevsjy.gs,.gs,helper,d56a5895a9a5adc3683b4c03ef7e5c9fe6c99c13d8b1f00605c57f4664b126ec,,,,12: rgbset_mod
+icec_day/clevsjy2.gs,.gs,helper,a595ad817bf481db1855f01a83c2d3227e7c719aff6de33dd98fba1e8a58bc65,,,,
+icec_day/dots.gs,.gs,helper,8f31fa8e560acb18a015de8d658e0543870e12d8feee3d1fcda5964685106e42,,,,
+icec_day/draw_reg_snow_sst.gs,.gs,analysis_or_display,6591b097e9b24e03d152629ecf24e9dbd13c19fa6afb8ac8e731b7d180bbe82d,image_export | maskout,3: open reg_snowday_icec_JFM-11.ctl | 4: open reg_snowday_air-11.ctl,69: printim ./reg_jj_day_icec_air(-11).png x1000 y800 white,17: clevsjy2 0.03 0 | 20: xcbar 1 10 0.5 0.7 -ft 60 | 24: dots icesig 0.03 2.0  2.0  1 | 27: basemap L 0 1 L
+icec_day/xcbar.gs,.gs,helper,8071f82bd44367159a6859754e76ff3c70222a46d6b7f69d83b569acbd8f70ef,,,,
+icec_depth/basemap.gs,.gs,helper,23828e7b344f7d96195893f6e9eebae3ec5b81484affdd9afd5008b6396a8d7a,,,,
+icec_depth/cbarm.gs,.gs,helper,0eca9f4f28c1c242574f656d93e8d1271a37a69780d7e99f97fba307faa3a947,,,,
+icec_depth/cbarm0.gs,.gs,helper,75d1c7e2ce6fb889c25f0e432f02a607d52f5c4ff8044aadc04fb4d651d8cb28,,,,
+icec_depth/clevsjy.gs,.gs,helper,d56a5895a9a5adc3683b4c03ef7e5c9fe6c99c13d8b1f00605c57f4664b126ec,,,,12: rgbset_mod
+icec_depth/clevsjy2.gs,.gs,helper,a595ad817bf481db1855f01a83c2d3227e7c719aff6de33dd98fba1e8a58bc65,,,,
+icec_depth/dots.gs,.gs,helper,8f31fa8e560acb18a015de8d658e0543870e12d8feee3d1fcda5964685106e42,,,,
+icec_depth/draw_reg_snow_sst.gs,.gs,analysis_or_display,7b9c9f6cd0774b76fd8d3752e4b78e1d6ff2e210b2504c4f4cd0e090aff012fd,image_export | maskout,3: open reg_snowdepth_icec_-8.ctl | 4: open reg_snowdepth_air-8.ctl,70: printim ./reg_jj_icec_air(-8).png x1000 y800 white,17: clevsjy2 0.03 0 | 20: xcbar 1 10 0.5 0.7 -ft 60 | 24: dots icesig 0.03 2.0  2.0  1 | 27: basemap L 0 1 L
+icec_depth/draw_test.gs,.gs,analysis_or_display,71c9c018dd8fc8ace209e8015e57fae5999a84317daf8a99766a766be7557419,maskout,3: open reg_snowdepth_air-8.ctl,,
+icec_depth/font.gs,.gs,helper,a5427b053d3f76e564e70d62f48ab20b07d286a8133f2d6c944b872d0f9fe544,,,,
+icec_depth/xcbar.gs,.gs,helper,8071f82bd44367159a6859754e76ff3c70222a46d6b7f69d83b569acbd8f70ef,,,,
+icec_snowday/basemap.gs,.gs,helper,23828e7b344f7d96195893f6e9eebae3ec5b81484affdd9afd5008b6396a8d7a,,,,
+icec_snowday/cbarm.gs,.gs,helper,0eca9f4f28c1c242574f656d93e8d1271a37a69780d7e99f97fba307faa3a947,,,,
+icec_snowday/clevsjy.gs,.gs,helper,d56a5895a9a5adc3683b4c03ef7e5c9fe6c99c13d8b1f00605c57f4664b126ec,,,,12: rgbset_mod
+icec_snowday/clevsjy2.gs,.gs,helper,a595ad817bf481db1855f01a83c2d3227e7c719aff6de33dd98fba1e8a58bc65,,,,
+icec_snowday/dots.gs,.gs,helper,8f31fa8e560acb18a015de8d658e0543870e12d8feee3d1fcda5964685106e42,,,,
+icec_snowday/draw_reg_snow_sst.gs,.gs,analysis_or_display,1f289f275bd877de367e89ecfa3b2b5f1ff1c862b2092e30bdf096a43403cd95,image_export | maskout,3: open reg_snowday_icec_DJF-12.ctl | 4: open reg_snowday_hgt_-12.ctl,68: printim ./reg_jj_icec_geo(-12).png x1000 y800 white,16: clevsjy2 0.05 | 19: xcbar 1 10 0.24 0.44 -ft 60 | 24: dots icesig 0.03 2.0  2.0  1 | 27: basemap L 0 1 L
+icec_snowday/WJJtest.gs,.gs,analysis_or_display,4418aacd8112c50245cb5e7fcb8c50834874d8404e511b21449b7d98afd2256d,image_export | maskout,3: open reg_snowday_icec_DJF-12.ctl | 4: open reg_snowday_hgt_-12.ctl,67: printim ./reg_jj_icec_geo(-12).png x1000 y800 white,16: clevsjy2 0.05 | 19: xcbar 1 10 0.24 0.44 -ft 60 | 24: dots icesig 0.03 2.0  2.0  1 | 27: basemap L 0 1 L
+icec_snowday/xcbar.gs,.gs,helper,8071f82bd44367159a6859754e76ff3c70222a46d6b7f69d83b569acbd8f70ef,,,,
+icec_snowdepth/basemap.gs,.gs,helper,23828e7b344f7d96195893f6e9eebae3ec5b81484affdd9afd5008b6396a8d7a,,,,
+icec_snowdepth/cbarm.gs,.gs,helper,0eca9f4f28c1c242574f656d93e8d1271a37a69780d7e99f97fba307faa3a947,,,,
+icec_snowdepth/clevsjy.gs,.gs,helper,d56a5895a9a5adc3683b4c03ef7e5c9fe6c99c13d8b1f00605c57f4664b126ec,,,,12: rgbset_mod
+icec_snowdepth/clevsjy2.gs,.gs,helper,a595ad817bf481db1855f01a83c2d3227e7c719aff6de33dd98fba1e8a58bc65,,,,
+icec_snowdepth/dots.gs,.gs,helper,8f31fa8e560acb18a015de8d658e0543870e12d8feee3d1fcda5964685106e42,,,,
+icec_snowdepth/draw_reg_snow_sst.gs,.gs,analysis_or_display,69f7f170b1d14150c16b65cf42607d7759e2c8fc62bba17ba1e07128ff16356c,image_export | maskout,3: open reg_snowdepth_icec_-12.ctl | 4: open reg_snowdepth_hgt-12.ctl,66: printim ./reg_jj_icec_geo(-12).png x1000 y800 white,15: clevsjy2 0.03 | 18: xcbar 1 10 0.24 0.44 -ft 60 | 22: dots icesig 0.03 2.0  2.0  1 | 25: basemap L 0 1 L
+icec_snowdepth/draw_test.gs,.gs,analysis_or_display,ef6eb4715c5c72abebd700b6d50e153169c25d89f806540631ce23cc4cd7ee87,image_export | maskout,3: open reg_snowdepth_icec_-12.ctl,41: printim ./reg_jj_icec_test(-12).png x1000 y800 white,12: clevsjy2 0.1 0.7 | 13: rgbset_mod | 33: xcbar 1 10 0.24 0.44 -ft 60 | 37: dots icesig 0.06 2.0  2.0  1 | 39: basemap L 0 1 L
+icec_snowdepth/font.gs,.gs,helper,a5427b053d3f76e564e70d62f48ab20b07d286a8133f2d6c944b872d0f9fe544,,,,
+icec_snowdepth/xcbar.gs,.gs,helper,8071f82bd44367159a6859754e76ff3c70222a46d6b7f69d83b569acbd8f70ef,,,,
+jet/cbarm.gs,.gs,helper,0eca9f4f28c1c242574f656d93e8d1271a37a69780d7e99f97fba307faa3a947,,,,
+JFM/basemap.gs,.gs,helper,e362475f149fed006527805faeef20a297722274ec96f58a589e1e228e085aff,,,,
+JFM/cbarm.gs,.gs,helper,0eca9f4f28c1c242574f656d93e8d1271a37a69780d7e99f97fba307faa3a947,,,,
+JFM/clevsjy.gs,.gs,helper,d56a5895a9a5adc3683b4c03ef7e5c9fe6c99c13d8b1f00605c57f4664b126ec,,,,12: rgbset_mod
+JFM/dots.gs,.gs,helper,508c1a78cdddd422d840fcfe4dbea394abca1cde27d02575943fb206166ec4eb,,,,
+JFM/draw.gs,.gs,analysis_or_display,9268474793b8b03545efeca13c513595940e849d238bf45ec28a814a7f49c85c,image_export | maskout,3: open corr_snow_JFM_sst_JFM.ctl | 4: open air_correlation_to_Jeonju_JFM_JFM.ctl | 5: open hgt85_1984-2021_JFM_correlation_to_JFM.ctl | 6: open uwnd_snow_jfm.ctl | 7: open vwnd_snow_jfm.ctl,45: printim ./SNOW_JFM_corr_SST_FMA.png x4000 y3600 white,16: basemap L 15 1 L | 31: dots corr.3 0.2 2 2 66 2 | 40: cbarm 1 0
+JFM/draw2.gs,.gs,analysis_or_display,3fc412a88f3c4a460bc6986a029fd38ac385b25d5781d816c331aa7b1a6ba5c8,image_export | maskout,2: open uwnd_snow_jfm.ctl | 3: open vwnd_snow_jfm.ctl,16: printim ./SNOW_JFM_corr_SST_FMA.png x4000 y3600 white,11: basemap L 15 1 L | 12: cbarm
+JFM/draw3.gs,.gs,analysis_or_display,11c1ed0352c7e22dfb4a65e34775a3c0b6b6f1174958c0b728ae97b98d54e331,image_export | maskout,2: open /home/lmw/Climate_analysis/paper/corr/corr_snow_JFM_sst_JFM.ctl | 3: open /home/lmw/Climate_analysis/paper/corr/air_correlation_to_Jeonju_JFM_JFM.ctl | 4: open /home/lmw/Climate_analysis/paper/corr/hgt85_1984-2021_JFM_correlation_to_JFM.ctl | 5: open /home/lmw/Climate_analysis/paper/corr/uwnd_snow_jfm.ctl | 6: open /home/lmw/Climate_analysis/paper/corr/vwnd_snow_jfm.ctl,45: printim ./test_SG(AMJ_JFM_83-20).png x4000 y3600 white,17: basemap L 15 1 L | 35: dots corr.3 0.2 2 2 66 2 | 43: cbarm 1 0
+make_sst_jan/mk_data_sst.gs,.gs,data_export_or_mixed_workflow,741f66fc98ef3d29f48ce6a50426b7924183358c9c4a1e7498f3f602c90eea88,binary_export | seasonal_climatology,2: sdfopen ../make_sst_jan/sst.mnmean.nc,19: set fwrite sst_JAN-12.gdat,
+mean/cbarm.gs,.gs,helper,0eca9f4f28c1c242574f656d93e8d1271a37a69780d7e99f97fba307faa3a947,,,,
+mean/draw_ENSO_anomaly.gs,.gs,analysis_or_display,8a3b75f0bb73beffd680670a61650b1b4e5dbc04918c3eeb328f2da007d1a714,area_average | seasonal_climatology,2: sdfopen /home/sang9604/climate_analysis/Data/sst.mnmean.nc,,
+mean/draw_mean.gs,.gs,analysis_or_display,31b34b7c78a7f560ee5d19f0d9c539a6b9d33af98d26417e28e43eb12e7d6633,seasonal_climatology,2: sdfopen /home/sang9604/climate_analysis/Data/uwnd.mon.mean.nc,,34: cbarm
+mean/draw_mean_precip.gs,.gs,analysis_or_display,3f0a15ddb3ca2d5d6a80f082d754e57c75c52d759299006f45e1d336fee4b40d,,2: sdfopen /home/sang9604/climate_analysis/Data/precip.mon.mean.nc,,19: cbarm
+mean/draw_seasonal_climatology.gs,.gs,analysis_or_display,fbc0b0eba66bcbc93dae788eae758cf5969c2a0a55758d19a6b7116607994382,seasonal_climatology,2: sdfopen /home/sang9604/climate_analysis/Data/sst.mnmean.nc,,31: cbarm
+mean/TEST2.gs,.gs,analysis_or_display,6e8bda5a6d100fa3503ce865887677abebe35d4cbb126a7c74209d4a3ef75334,seasonal_climatology,2: sdfopen /home/sang9604/climate_analysis/Data/precip.mon.mean.nc | 3: sdfopen /home/sang9604/climate_analysis/Data/uwnd.mon.mean.nc | 4: sdfopen /home/sang9604/climate_analysis/Data/vwnd.mon.mean.nc,,115: cbarm 0.95
+mean/TEST3.gs,.gs,analysis_or_display,3a709a78d91bb0aa95db30b1c459301f054b6302fc400aa2a89c4f2155c33be5,seasonal_climatology,2: sdfopen /home/sang9604/climate_analysis/Data/precip.mon.mean.nc,,
+nonmun/basemap.gs,.gs,helper,e362475f149fed006527805faeef20a297722274ec96f58a589e1e228e085aff,,,,
+nonmun/cbarm.gs,.gs,helper,0eca9f4f28c1c242574f656d93e8d1271a37a69780d7e99f97fba307faa3a947,,,,
+nonmun/clevsjy2.gs,.gs,helper,a595ad817bf481db1855f01a83c2d3227e7c719aff6de33dd98fba1e8a58bc65,,,,
+nonmun/draw_corr_snow_airt.gs,.gs,analysis_or_display,bf0d54369768cb751da571c16017a4a2334f549401fc9626648487b5bcad6c8f,maskout,2: open corr_DJF_snow_air.ctl,,6: cbarm
+nonmun/draw_corr_snow_sst.gs,.gs,analysis_or_display,56475b2e5d813f011249a0a2d2e45c6d3565712389c51d822c8c0a07f5247f3b,maskout,2: open corr_JJA_snow_sst.ctl,,6: cbarm
+nonmun/draw_corr_snow_vwnd.gs,.gs,analysis_or_display,f1e5e1df62dd1ccfb8d2cd1d4c08f30874262c880b0f64a2aa6939cac199f992,maskout,2: open corr_SON_snow_vwnd.ctl,,6: cbarm
+nonmun/draw_scatter.gs,.gs,analysis_or_display,9b7b2a14f47dd5fc2c9b8464eeec3b78adaf019b1ec38b0c07e66a15eeb6898b,,2: open snow.ctl,,
+nonmun/make_data_airtem.gs,.gs,data_export_or_mixed_workflow,de2ddc056dd25df2da204c6353e9039e2cd4d791a8666b2abc9564c8ba945be8,binary_export | seasonal_climatology,2: sdfopen ../nonmun/air.mon.mean.nc,20: set fwrite airt_DJF_1981-2021.gdat,
+nonmun/make_data_sst.gs,.gs,data_export_or_mixed_workflow,1919c34875cb2791caf0d6380979b105f90b0c54945dd8db928bcc0ac9b02ea0,binary_export | seasonal_climatology,2: sdfopen ../nonmun/sst.mnmean.nc,20: set fwrite sst_SON_1981-2021.gdat,
+nonmun/make_data_vwnd.gs,.gs,data_export_or_mixed_workflow,b7340ffb21193865dac358b1fb67f8c439c39940f71d82c61396a75ddb16da5b,binary_export | seasonal_climatology,2: sdfopen ../nonmun/vwnd.mon.mean.nc,20: set fwrite vwnd_SON_1981-2021.gdat,
+nonmun/subplot.gs,.gs,helper,5734517b95febb8c72edb6dbcb4ce828686ad0e0a8e849ff884ad68d5842bae4,,,,
+nonmunDJF/basemap.gs,.gs,helper,e362475f149fed006527805faeef20a297722274ec96f58a589e1e228e085aff,,,,
+nonmunDJF/cbarm.gs,.gs,helper,0eca9f4f28c1c242574f656d93e8d1271a37a69780d7e99f97fba307faa3a947,,,,
+nonmunDJF/clevsjy2.gs,.gs,helper,a595ad817bf481db1855f01a83c2d3227e7c719aff6de33dd98fba1e8a58bc65,,,,
+nonmunDJF/draw_corr_snow_sst.gs,.gs,analysis_or_display,03e7edb4861b5585057bbc0520b85018e0c388e5cf7dcc9be98bfe230a5fb8b9,image_export | maskout,2: open corr_JFM_snow_sst.ctl,11: printim ./SNOW_DJF_corr_SST_JFM.png,6: basemap L 15 1 L | 8: cbarm
+nonmunDJF/draw_scatter.gs,.gs,analysis_or_display,9b7b2a14f47dd5fc2c9b8464eeec3b78adaf019b1ec38b0c07e66a15eeb6898b,,2: open snow.ctl,,
+nonmunDJF/make_data_sst.gs,.gs,data_export_or_mixed_workflow,ac091ccf7b734af5d6d8a7fa9f1021ab116d000844ef8923a44b959ecb59241c,binary_export | seasonal_climatology,2: sdfopen ../nonmun/sst.mnmean.nc,20: set fwrite sst_JFM_1981-2021.gdat,
+nonmunDJF/subplot.gs,.gs,helper,5734517b95febb8c72edb6dbcb4ce828686ad0e0a8e849ff884ad68d5842bae4,,,,
+nonmunJFM/basemap.gs,.gs,helper,23828e7b344f7d96195893f6e9eebae3ec5b81484affdd9afd5008b6396a8d7a,,,,
+nonmunJFM/cbarm.gs,.gs,helper,0eca9f4f28c1c242574f656d93e8d1271a37a69780d7e99f97fba307faa3a947,,,,
+nonmunJFM/clevsjy.gs,.gs,helper,d56a5895a9a5adc3683b4c03ef7e5c9fe6c99c13d8b1f00605c57f4664b126ec,,,,12: rgbset_mod
+nonmunJFM/dots.gs,.gs,helper,8f31fa8e560acb18a015de8d658e0543870e12d8feee3d1fcda5964685106e42,,,,
+nonmunJFM/draw_corr_snow_sst.gs,.gs,analysis_or_display,0718145f8a90b3e06fbbb9e31798ed23fc712ed3801e439c07733ebd3d890fa6,image_export | maskout,2: open corr_snow_JFM_sst_JFM_-12.ctl,10: printim ./SNOW_JFM_corr_SST_JFM_-12.png x4000 y3600 white,6: basemap L 15 1 L | 7: cbarm
+nonmunJFM/draw_scatter.gs,.gs,analysis_or_display,3d0ecf0b619b5e23ab72af60a758e98258598aaa7634de2004799565fa796067,,2: open JFM.ctl,,
+nonmunJFM/make_data_sst.gs,.gs,data_export_or_mixed_workflow,3e46d27288b908daa7b95369aefbea0483653b0f8a183414431c0dc3e5ac59cc,binary_export | seasonal_climatology,2: sdfopen ../nonmun/sst.mnmean.nc,20: set fwrite sst_JFM_-12.gdat,
+nonmunJFM/sst_precip_dots.gs,.gs,analysis_or_display,91693da5ef14a973bfdd1f480463b3be504fa8973555ce7c48efc9b3cdc87d0c,image_export,2: sdfopen ../0.Data/sst.mnmean.nc | 3: sdfopen ../0.Data/precip.mon.mean.nc,29: printim ./test_NY.png x4000 y3600 white,11: clevsjy 1 | 25: dots precip.2 0.5 3 3 66 2 | 27: cbarm 1 0
+nonmunJFM/subplot.gs,.gs,helper,5734517b95febb8c72edb6dbcb4ce828686ad0e0a8e849ff884ad68d5842bae4,,,,
+nonmunJFM/우진/ltrend.gs,.gs,helper,f6f342062be1443913391fc8e4aa3119b06d61ec5c72a9f003e37ca125dd0c71,maskout,,,
+nonmunNDJ/basemap.gs,.gs,helper,e362475f149fed006527805faeef20a297722274ec96f58a589e1e228e085aff,,,,
+nonmunNDJ/cbarm.gs,.gs,helper,0eca9f4f28c1c242574f656d93e8d1271a37a69780d7e99f97fba307faa3a947,,,,
+nonmunNDJ/clevsjy2.gs,.gs,helper,a595ad817bf481db1855f01a83c2d3227e7c719aff6de33dd98fba1e8a58bc65,,,,
+nonmunNDJ/draw_corr_snow_sst.gs,.gs,analysis_or_display,56475b2e5d813f011249a0a2d2e45c6d3565712389c51d822c8c0a07f5247f3b,maskout,2: open corr_JJA_snow_sst.ctl,,6: cbarm
+nonmunNDJ/draw_scatter.gs,.gs,analysis_or_display,9b7b2a14f47dd5fc2c9b8464eeec3b78adaf019b1ec38b0c07e66a15eeb6898b,,2: open snow.ctl,,
+nonmunNDJ/make_data_sst.gs,.gs,data_export_or_mixed_workflow,1919c34875cb2791caf0d6380979b105f90b0c54945dd8db928bcc0ac9b02ea0,binary_export | seasonal_climatology,2: sdfopen ../nonmun/sst.mnmean.nc,20: set fwrite sst_SON_1981-2021.gdat,
+nonmunNDJ/subplot.gs,.gs,helper,5734517b95febb8c72edb6dbcb4ce828686ad0e0a8e849ff884ad68d5842bae4,,,,
+partial_regression/44444.gs,.gs,analysis_or_display,b9f27cbe3bf3e831b13ba847dd3e173ae654d7698366db18bed90aea312ea51e,,2: open slp_NDJ_regressed_onto_Jeonju_precip.ctl,,
+partial_regression/55555.gs,.gs,analysis_or_display,00fcc79764c28305a82f4c00e7d7c323c58cb97101d352f34a6fa96b0f44b2dc,,2: open slp_NDJ_part_regressed_onto_Jeonju_precip.ctl,,9: cbarm
+partial_regression/basemap.gs,.gs,helper,e362475f149fed006527805faeef20a297722274ec96f58a589e1e228e085aff,,,,
+partial_regression/cbarm.gs,.gs,helper,0eca9f4f28c1c242574f656d93e8d1271a37a69780d7e99f97fba307faa3a947,,,,
+partial_regression/clevsjy2.gs,.gs,helper,a595ad817bf481db1855f01a83c2d3227e7c719aff6de33dd98fba1e8a58bc65,,,,
+partial_regression/make_data_slp.gs,.gs,data_export_or_mixed_workflow,7b3f4bccc2cbbea2dae6a924aaa8e6d2f3569d8747020f4a2b2f6babe6a981ce,binary_export | seasonal_climatology,2: sdfopen /home/sang9604/climate_analysis/partial_regression/mslp.mon.mean.nc,20: set fwrite slp_NDJ_1982-2018.gdat,
+regression/draw_scatter.gs,.gs,analysis_or_display,0682c69f6bd5928376ee03e096801d7cbb2d5243a663a4f3d4c041573356d925,,2: open Nino_index_NDJ_1982-2018.ctl | 3: open precip_Jeonju_DEC_1982-2018.ctl,,
+regression/make_data_sst.gs,.gs,data_export_or_mixed_workflow,3a2f92d11a504a05357b2c7574b3d86f7c1ae3c4cd9fdf686dad2b132d59ee21,binary_export | seasonal_climatology,2: sdfopen /home/sang9604/climate_analysis/Data/sst.mnmean.nc,20: set fwrite sst_NDJ_1982-2018.gdat,
+regression/mk_Nino_index.gs,.gs,data_export_or_mixed_workflow,27851f2a98e5d0e488141b2dc44664ac21230d2a51eb68e24756c49698bcdc90,area_average | binary_export | seasonal_climatology,2: sdfopen /home/sang9604/climate_analysis/Data/sst.mnmean.nc,21: set fwrite Nino_index_NDJ_1982-2018.gdat,
+regression/reg_btw2ts.gs,.gs,analysis_or_display,4504e253373b526c6101089aac9c3192e8312825e701afa95242e6fb57dbb9ba,,3: open Nino_index_NDJ_1982-2018.ctl | 4: open precip_Jeonju_DEC_1982-2018.ctl,,
+snow/draw_devi.gs,.gs,analysis_or_display,0c9239adc375d0090013c097484134328cc4680d85e508b6b56792ed097c8082,image_export,2: open detrended_snow_DEC_1983-2020.ctl,32: printim ./DEC_snowday_deviation.png x2000 y1600 white,
+snow/draw_devi2.gs,.gs,analysis_or_display,b2d8ac2e55309d40b91e7c0a82adbd7f940829374a63c37895f7cfbaa0512824,image_export,2: open detrended_snow_DEC_1983-2020.ctl,33: printim ./TEST_DEC_snowday_deviation.png x2000 y1600 white,
+snow/draw_scatter.gs,.gs,analysis_or_display,8d39d966e8504404114d51c880104cdfafbf395f55a463f7129bab55779c0cf9,image_export,2: open snow_JAN_1984-2021.ctl,23: printim ./JAN_snowday.png x2000 y1600 white,
+snow/draw_trend.gs,.gs,data_export_or_mixed_workflow,6504dbda16d8045dc79cd910df70204ca43b272e03cb7b304ebe3c0a8fc60f84,binary_export | image_export,3: open snowday_FEB_1983-2020.ctl,47: printim ./snowday_FEB_1984-2021.png x2000 y1600 white | 51: set fwrite ./detrended_snowday_FEB_1983-2020.gdat,26: ltrend ind trd
+snow/ltrend.gs,.gs,helper,da8b2dbd4b7b463adeaf9d19870367ed16dde72c179254394c1d6f4e69737425,maskout,,,
+snow/qdims.gsf,.gsf,helper,b98d9cface2b3c2bacc21d3ea09c6344fa7abb7eebb5ea43229a180860fc70d2,,,,
+snow2/basemap.gs,.gs,helper,23828e7b344f7d96195893f6e9eebae3ec5b81484affdd9afd5008b6396a8d7a,,,,
+snow2/cbarm.gs,.gs,helper,0eca9f4f28c1c242574f656d93e8d1271a37a69780d7e99f97fba307faa3a947,,,,
+snow2/clevsjy.gs,.gs,helper,d56a5895a9a5adc3683b4c03ef7e5c9fe6c99c13d8b1f00605c57f4664b126ec,,,,12: rgbset_mod
+snow2/draw_corr_snow_sst.gs,.gs,analysis_or_display,87380ee7b8b566bb11d8a12438d389914f6e47a59e324e3d9d67dc2ebed12be6,image_export | maskout,2: open corr_snow_JFM_sst_DJF_-12.ctl,10: printim ./SNOW_JFM_corr_SST_DJF_-12.png x4000 y3600 white,6: basemap L 15 1 L | 7: cbarm
+snow2/make_data_sst.gs,.gs,data_export_or_mixed_workflow,f29e204e34a8d9f9e6cc89bf0f16b074f5657bb0cae6b181b4bd7731f8af405d,binary_export | seasonal_climatology,2: sdfopen ../nonmun/sst.mnmean.nc,20: set fwrite sst_JAN.gdat,
+snow2/subplot.gs,.gs,helper,5734517b95febb8c72edb6dbcb4ce828686ad0e0a8e849ff884ad68d5842bae4,,,,
+snow3/basemap.gs,.gs,helper,23828e7b344f7d96195893f6e9eebae3ec5b81484affdd9afd5008b6396a8d7a,,,,
+snow3/cbarm.gs,.gs,helper,0eca9f4f28c1c242574f656d93e8d1271a37a69780d7e99f97fba307faa3a947,,,,
+snow3/clevsjy.gs,.gs,helper,d56a5895a9a5adc3683b4c03ef7e5c9fe6c99c13d8b1f00605c57f4664b126ec,,,,12: rgbset_mod
+snow3/draw_comp_snow_sst.gs,.gs,analysis_or_display,38a13d80b2b01f7b54a594282166104801fc72c5567ac116057549c533099f06,image_export | maskout,2: open comp_snow_JAN_sst_ASO.ctl,11: printim ./SNOW_JAN_comp_SST_ASO(-30).png x4000 y3600 white,7: basemap L 15 1 L | 8: cbarm
+snow3/make_data_sst.gs,.gs,data_export_or_mixed_workflow,075e40c7e3de280445a25e8afc9bf274942029fe23f023ae8b14e02d92e749c1,binary_export | seasonal_climatology,2: sdfopen ../nonmun/sst.mnmean.nc,20: set fwrite sst_DJF_-12.gdat,
+snow3/subplot.gs,.gs,helper,5734517b95febb8c72edb6dbcb4ce828686ad0e0a8e849ff884ad68d5842bae4,,,,
+snowday_comp/basemap.gs,.gs,helper,23828e7b344f7d96195893f6e9eebae3ec5b81484affdd9afd5008b6396a8d7a,,,,
+snowday_comp/cbarm.gs,.gs,helper,0eca9f4f28c1c242574f656d93e8d1271a37a69780d7e99f97fba307faa3a947,,,,
+snowday_comp/clevsjy.gs,.gs,helper,d56a5895a9a5adc3683b4c03ef7e5c9fe6c99c13d8b1f00605c57f4664b126ec,,,,12: rgbset_mod
+snowday_comp/draw_comp_snow_sst.gs,.gs,analysis_or_display,0abf2d5afc3d0ed382249cf48a0ae32c824d00bb816b74ae45e9d6ccd9219e55,image_export | maskout,2: open comp_snowday_JAN_sst_JAN-12.ctl,11: printim ./snowday_JAN_comp_SST_JAN-12.png x4000 y3600 white,7: basemap L 15 1 L | 8: cbarm
+snowday_reg/basemap.gs,.gs,helper,23828e7b344f7d96195893f6e9eebae3ec5b81484affdd9afd5008b6396a8d7a,,,,
+snowday_reg/cbarm.gs,.gs,helper,0eca9f4f28c1c242574f656d93e8d1271a37a69780d7e99f97fba307faa3a947,,,,
+snowday_reg/clevsjy.gs,.gs,helper,d56a5895a9a5adc3683b4c03ef7e5c9fe6c99c13d8b1f00605c57f4664b126ec,,,,12: rgbset_mod
+snowday_reg/draw_corr_snow_sst.gs,.gs,analysis_or_display,81e3ef6d24896a2cc074963b59485ada975bf7a545293b049355547926553996,image_export | maskout,2: open reg_snowday_JAN_sst_JAN-12.ctl,10: printim ./snowdepth_JAN_reg_SST_JAN-12.png x4000 y3600 white,6: basemap L 15 1 L | 7: cbarm
+snowday_reg_sea_ice/basemap.gs,.gs,helper,23828e7b344f7d96195893f6e9eebae3ec5b81484affdd9afd5008b6396a8d7a,,,,
+snowday_reg_sea_ice/cbarm.gs,.gs,helper,0eca9f4f28c1c242574f656d93e8d1271a37a69780d7e99f97fba307faa3a947,,,,
+snowday_reg_sea_ice/clevsjy.gs,.gs,helper,d56a5895a9a5adc3683b4c03ef7e5c9fe6c99c13d8b1f00605c57f4664b126ec,,,,12: rgbset_mod
+snowday_reg_sea_ice/draw_corr_snow_sst.gs,.gs,analysis_or_display,f55e19a3e75ccbdeb08fd9849c378a6e6fdb03fb6c9f6f3c7ee1ffcb6464cc3a,image_export | maskout,2: open reg_snowday_JAN_icec_MAR-10.ctl,16: printim ./snowday_JAN_reg_icec_MAR-10.png x4000 y3090 white,9: clevsjy 0.3 1 | 11: basemap L 15 1 L | 13: cbarm
+snowday_reg_sea_ice/mk_data_ice.gs,.gs,data_export_or_mixed_workflow,7ddb885d9f8ba50d97ba599aee059033aa424881fabc2206bd499a8b1ce47893,binary_export | seasonal_climatology,2: sdfopen ../sea_ice/icec.mnmean.nc,19: set fwrite icec_JAN-12.gdat,
+snowdepth_comp/basemap.gs,.gs,helper,23828e7b344f7d96195893f6e9eebae3ec5b81484affdd9afd5008b6396a8d7a,,,,
+snowdepth_comp/cbarm.gs,.gs,helper,0eca9f4f28c1c242574f656d93e8d1271a37a69780d7e99f97fba307faa3a947,,,,
+snowdepth_comp/clevsjy.gs,.gs,helper,d56a5895a9a5adc3683b4c03ef7e5c9fe6c99c13d8b1f00605c57f4664b126ec,,,,12: rgbset_mod
+snowdepth_comp/draw_comp_snow_sst.gs,.gs,analysis_or_display,05a3ce4fc09113ebc0183e2a1f6b29216d3f4c55f04525eb437a59e952691e45,image_export | maskout,2: open comp_snowdepth_JAN_sst_JAN-12.ctl,11: printim ./snowdepth_JAN_comp_SST_JAN-12.png x4000 y3600 white,7: basemap L 15 1 L | 8: cbarm
+snowdepth_reg/basemap.gs,.gs,helper,23828e7b344f7d96195893f6e9eebae3ec5b81484affdd9afd5008b6396a8d7a,,,,
+snowdepth_reg/cbarm.gs,.gs,helper,0eca9f4f28c1c242574f656d93e8d1271a37a69780d7e99f97fba307faa3a947,,,,
+snowdepth_reg/clevsjy.gs,.gs,helper,d56a5895a9a5adc3683b4c03ef7e5c9fe6c99c13d8b1f00605c57f4664b126ec,,,,12: rgbset_mod
+snowdepth_reg/draw_corr_snow_sst.gs,.gs,analysis_or_display,b2d08430c5bb4bd92727c7bf3470727024cb5db764bcf83d1890ec3e432eb3f7,image_export | maskout,2: open reg_snowdepth_JAN_sst_JAN-12.ctl,10: printim ./snowdepth_JAN_reg_SST_JAN-12.png x4000 y3600 white,6: basemap L 15 1 L | 7: cbarm
+snowdepth_reg_sea_ice/basemap.gs,.gs,helper,23828e7b344f7d96195893f6e9eebae3ec5b81484affdd9afd5008b6396a8d7a,,,,
+snowdepth_reg_sea_ice/cbarm.gs,.gs,helper,0eca9f4f28c1c242574f656d93e8d1271a37a69780d7e99f97fba307faa3a947,,,,
+snowdepth_reg_sea_ice/clevsjy.gs,.gs,helper,d56a5895a9a5adc3683b4c03ef7e5c9fe6c99c13d8b1f00605c57f4664b126ec,,,,12: rgbset_mod
+snowdepth_reg_sea_ice/draw_reg_snow_icec.gs,.gs,analysis_or_display,650ffe006cb34f3cdb7b1dde67e270d3d90b6ea0734da6f43f165031d63ec1d2,image_export | maskout,2: open reg_snowdepth_JAN_icec_JAN-0.ctl,16: printim ./snowdepth_JAN_reg_icec-JAN-0.png x4000 y3090 white,9: clevsjy 0.1 0.5 | 11: basemap L 15 1 L | 13: cbarm
+snowdepth_reg_sea_ice/mk_data_ice.gs,.gs,data_export_or_mixed_workflow,7ddb885d9f8ba50d97ba599aee059033aa424881fabc2206bd499a8b1ce47893,binary_export | seasonal_climatology,2: sdfopen ../sea_ice/icec.mnmean.nc,19: set fwrite icec_JAN-12.gdat,
+spectral analysis/Code4filtering/mk_Nino_index_monthly.gs,.gs,data_export_or_mixed_workflow,dbdeb367c640f9509ddade42adbdb48f7b18faea5ed39bb1122e44301f9e1347,area_average | binary_export,2: sdfopen ../Data/sst.mnmean.nc,13: set fwrite Nino_monthly_JAN1982-DEC2018.gdat,
+spectral analysis/Code4SpectralAnalysis/mk_Nino_index_monthly.gs,.gs,data_export_or_mixed_workflow,f84e6b1ec667356c2b54c0ad10361f3d3b9a12a832827f35ca7b3f4bd5a2eb9b,area_average | binary_export,2: sdfopen ../Data/sst.mnmean.nc,9: set fwrite Nino_monthly_JAN1982-DEC2018.gdat,
+test/44444.gs,.gs,analysis_or_display,d74efbd790ecb7267153ea2e24f7e5d3ad2bcaabcbe8b7bf889be490ccc32d4c,maskout,2: open precip_sst_reg.ctl,,8: cbarm
+test/cbarm.gs,.gs,helper,0eca9f4f28c1c242574f656d93e8d1271a37a69780d7e99f97fba307faa3a947,,,,
+test/mk_precip.gs,.gs,data_export_or_mixed_workflow,7a84de12d97dc368d5fcc2bd8e4336c121834bb604cc4bfbe04afa75c09c65aa,area_average | binary_export | seasonal_climatology,2: sdfopen /home/sang9604/climate_analysis/Data/precip.mon.mean.nc,21: set fwrite precip_ind.gdat,
+test/mk_sst.gs,.gs,data_export_or_mixed_workflow,d92871bd84b8edc264bc866955de99b0a9cfbd6dc73f4bc7dcfcb5c596af85c9,binary_export | seasonal_climatology,2: sdfopen /home/sang9604/climate_analysis/Data/sst.mnmean.nc,20: set fwrite sst_ano.gdat,
+test/scatter.gs,.gs,analysis_or_display,177afeb3fa0e70ca0c86af07163afd415e5c751eb2eba4b3068c5db18ace4b88,,2: open precip_ind.ctl | 3: open sst_ano.ctl,,
+test/zonal_tem.gs,.gs,analysis_or_display,9d7a56d1fb5f4163e0ddc135d15f9782708c5c2e6c7b5faf48b3056f2fd4928e,seasonal_climatology,2: sdfopen /home/sang9604/climate_analysis/test/air.mon.mean.nc,,27: cbarm 0.95
+test111/44444.gs,.gs,analysis_or_display,9de91f0febbdd6132e7ac9e54f3182bfd2114c05055d12d05633f778f3afb93f,maskout,2: open  correlogram.ctl,,
