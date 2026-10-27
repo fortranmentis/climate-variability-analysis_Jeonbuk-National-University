@@ -15,7 +15,7 @@ Research and coursework archive associated with Jeonbuk National University
 
 **English** · [한국어](README.ko.md)
 
-[About](#about) · [Highlights](#highlights) · [Gallery](#gallery) · [GrADS scripts](#grads-scripts) · [Quick start](#quick-start) · [Validation](#validation) · [Notes](#notes)
+[About](#about) · [Highlights](#highlights) · [Thesis](#thesis) · [Gallery](#gallery) · [GrADS scripts](#grads-scripts) · [Quick start](#quick-start) · [Validation](#validation) · [Notes](#notes)
 
 </div>
 
@@ -24,6 +24,37 @@ Research and coursework archive associated with Jeonbuk National University
 This repository preserves a working archive of climate data analysis: Fortran numerical programs, GrADS preprocessing and plotting scripts, MATLAB time-series routines, input datasets, intermediate binary fields, and existing figures. Its main research threads connect **Jeonju snowfall and snow depth** with **sea surface temperature, atmospheric circulation, and sea ice**; related directories contain climatology and statistical analysis exercises.
 
 The archive is organized by experiment and course task. Individual programs carry their own grid dimensions, time windows, input names, preprocessing choices, and statistical settings. The original directory names and research files are retained so that existing descriptors and relative paths remain traceable. The university name identifies the archive context supplied by the repository owner; it does not imply institutional endorsement.
+
+<a id="thesis"></a>
+
+## 2021 undergraduate thesis
+
+**전주시 겨울철 최심적설과 눈일수에 대한 전 지구적 메커니즘 분석**  
+Descriptive translation: *Global mechanisms associated with winter snow depth and snow days in Jeonju*  
+Climate Modeling Laboratory, Department of Earth and Environmental Sciences, Jeonbuk National University · November 19, 2021
+
+A **six-author undergraduate thesis** by 오승관, 윤난영, 이민욱, 이상학, 임지영 and 조영표, supervised by 박종연. The final thesis and presentation connect local snow observations with global ocean–atmosphere variability. The study is not presented as sole-authored work.
+
+| Research step | Documented in the thesis |
+|---|---|
+| Question | Which ocean–atmosphere variations are associated with Jeonju winter maximum snow depth and snow days? |
+| Inputs | **1983–2021** KMA Jeonju snow-depth/snow-day observations and NOAA SST, winds, 850 hPa temperature/geopotential height and sea-ice reanalysis |
+| Processing and statistics | DJF/three-month means, **0–12-month lagged regression fields** and time series; Fortran and GrADS |
+| Model comparison | **Linear Baroclinic Model (LBM)** responses to tropical forcing selected from precipitation regression fields, compared with atmospheric regression patterns |
+| Reported findings | An ENSO association at roughly **eight months’ lead** for maximum snow depth, a weaker relationship for snow days, and comparisons with LBM response patterns |
+
+The source specifies 1983–2021 and describes 38 years of analysis data; sample size is not recalculated from endpoint years. These are reported statistical relationships, not independent causal validation or evaluated predictive skill.
+
+<table>
+<tr>
+<td width="50%"><a href="https://fortranmentis.github.io/assets/research/jeonju-snow-thesis-2021.pdf#page=18"><img src="https://fortranmentis.github.io/assets/research/thesis-regression.webp" alt="Fig. 3 · Regression fields at 7–9-month lags / printed page 16" width="100%" /></a><p>Fig. 3 · Regression fields at 7–9-month lags / printed page 16</p></td>
+<td width="50%"><a href="https://fortranmentis.github.io/assets/research/jeonju-snow-thesis-2021.pdf#page=44"><img src="https://fortranmentis.github.io/assets/research/thesis-lbm.webp" alt="Fig. 18 · LBM and regression comparison / printed page 42" width="100%" /></a><p>Fig. 18 · LBM and regression comparison / printed page 42</p></td>
+</tr>
+</table>
+
+[Original thesis PDF · 7.6 MB](https://fortranmentis.github.io/assets/research/jeonju-snow-thesis-2021.pdf) · [Presentation PPTX · 16.6 MB](https://fortranmentis.github.io/assets/research/jeonju-snow-presentation-2021.pptx) · [Portfolio research overview](https://fortranmentis.github.io/#thesis)
+
+The original documents are hosted on GitHub Pages and can be downloaded separately. Previews show whole pages from the final thesis without redrawing their scientific content. **The thesis LBM experiment has not been rerun from this repository.** EOF, composite and MATLAB work belongs to the wider research/coursework archive; it is not all attributed to the thesis. Existing [validation limits](VALIDATION.md) still apply.
 
 ## Highlights
 
@@ -207,3 +238,4 @@ Details and machine-readable evidence: [Validation report](VALIDATION.md), [arch
 ---
 
 [한국어 문서](README.ko.md) · [Validation evidence](VALIDATION.md) · [Data and reuse](docs/DATA_AND_REUSE.md)
+

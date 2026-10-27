@@ -12,7 +12,7 @@
 ![MATLAB](https://img.shields.io/badge/Time_series-MATLAB-E16737?style=flat-square)
 ![Git LFS](https://img.shields.io/badge/Data-Git_LFS-2463A8?style=flat-square)
 
-[English](README.md) · **한국어**
+[English](README.md) · **한국어** · [공동 졸업논문](#thesis)
 
 </div>
 
@@ -21,6 +21,36 @@
 이 저장소는 Fortran 수치 계산 코드, GrADS 전처리·시각화 스크립트, MATLAB 시계열 분석 코드와 입력 자료·중간 산출물·기존 결과 그림을 함께 보존한 기후 분석 아카이브입니다. 주요 분석은 **전주 지역의 강설일수·적설심과 해수면 온도(SST), 대기 순환, 해빙의 관계**를 다루며, 기후 통계와 자료 처리 수업·실습도 포함합니다.
 
 각 폴더는 개별 실험이나 과제 단위로 구성되어 있습니다. 격자 크기, 기간, 입력 파일, 이상값·추세 처리 및 통계 설정은 프로그램마다 다릅니다. 기존 파일 간 연결을 추적할 수 있도록 원본 폴더명과 연구 자료를 유지했습니다. 대학명은 저장소 소유자가 지정한 자료의 맥락을 나타내며, 대학의 공식 승인이나 배포를 의미하지 않습니다.
+
+<a id="thesis"></a>
+
+## 2021 공동 졸업논문
+
+**전주시 겨울철 최심적설과 눈일수에 대한 전 지구적 메커니즘 분석**  
+전북대학교 지구환경과학과 기후모델링 연구실 · 2021.11.19
+
+오승관·윤난영·이민욱·이상학·임지영·조영표의 **6인 공동 학사학위논문**이며, 지도교수는 박종연입니다. 지역 강설 관측과 전 지구 해양·대기장을 연결한 연구로, 아래 내용은 최종 논문과 발표자료를 요약했습니다.
+
+| 연구 단계 | 논문에 기록된 내용 |
+|---|---|
+| 질문 | 전주시 겨울철 최심적설과 눈일수는 어떤 해양·대기 변동과 연관되는가? |
+| 입력 | **1983–2021년** 전주 기상청 최심적설·눈일수 관측과 NOAA SST, 바람, 850 hPa 기온·지오포텐셜 고도, 해빙 재분석 자료 |
+| 전처리·통계 | DJF·3개월 이동평균, **0–12개월 시차 회귀장**과 시계열 분석; Fortran·GrADS 활용 |
+| 모형 비교 | 강수 회귀장에서 선택한 열대 지역 강제력에 대한 **Linear Baroclinic Model(LBM)** 대기 반응과 회귀장 패턴 비교 |
+| 보고된 결과 | 최심적설은 약 **8개월 전 ENSO 연관성**, 눈일수는 상대적으로 약한 관계를 보고; LBM 반응 패턴도 비교 |
+
+원문은 관측기간을 1983–2021년, 분석자료를 38년으로 기재합니다. 연도 양끝만으로 표본 수를 다시 계산하지 않았습니다. 결과는 논문에 보고된 연관성으로, 독립적인 인과 검증이나 예측 성능 평가를 의미하지 않습니다.
+
+<table>
+<tr>
+<td width="50%"><a href="https://fortranmentis.github.io/assets/research/jeonju-snow-thesis-2021.pdf#page=18"><img src="https://fortranmentis.github.io/assets/research/thesis-regression.webp" alt="Fig. 3 · 7–9개월 시차 회귀장 / 본문 16쪽" width="100%" /></a><p>Fig. 3 · 7–9개월 시차 회귀장 / 본문 16쪽</p></td>
+<td width="50%"><a href="https://fortranmentis.github.io/assets/research/jeonju-snow-thesis-2021.pdf#page=44"><img src="https://fortranmentis.github.io/assets/research/thesis-lbm.webp" alt="Fig. 18 · LBM·회귀장 비교 / 본문 42쪽" width="100%" /></a><p>Fig. 18 · LBM·회귀장 비교 / 본문 42쪽</p></td>
+</tr>
+</table>
+
+[논문 원문 PDF · 7.6 MB](https://fortranmentis.github.io/assets/research/jeonju-snow-thesis-2021.pdf) · [발표자료 PPTX · 16.6 MB](https://fortranmentis.github.io/assets/research/jeonju-snow-presentation-2021.pptx) · [포트폴리오 연구 소개](https://fortranmentis.github.io/ko/#thesis)
+
+원문·발표자료는 별도 다운로드가 가능한 GitHub Pages 자료입니다. 그림은 최종 논문 해당 페이지 전체를 축소한 미리보기이며 내용을 다시 그리지 않았습니다. **논문의 LBM 실험을 이 저장소에서 재실행한 것은 아닙니다.** 아카이브의 EOF·합성·MATLAB 작업은 더 넓은 연구·수업 자료이며 모두 졸업논문에 사용된 방법이라는 뜻은 아닙니다. 기존 [검증 범위](VALIDATION.md)는 그대로 적용됩니다.
 
 ## Highlights · 주요 특징
 
@@ -200,3 +230,4 @@ Windows에서는 출력명을 `reg_btw2ts.exe`로 지정하고 `.\reg_btw2ts.exe
 ---
 
 [English](README.md) · [검증 근거](VALIDATION.md) · [자료와 재사용](docs/DATA_AND_REUSE.md)
+
