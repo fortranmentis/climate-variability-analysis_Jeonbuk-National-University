@@ -29,11 +29,10 @@ The archive is organized by experiment and course task. Individual programs carr
 
 ## 2021 undergraduate thesis
 
-**전주시 겨울철 최심적설과 눈일수에 대한 전 지구적 메커니즘 분석**  
-Descriptive translation: *Global mechanisms associated with winter snow depth and snow days in Jeonju*  
+**An Analysis of Global Mechanisms Associated with Winter Maximum Snow Depth and Snow Days in Jeonju**  
 Climate Modeling Laboratory, Department of Earth and Environmental Sciences, Jeonbuk National University · November 19, 2021
 
-A **six-author undergraduate thesis** by 오승관, 윤난영, 이민욱, 이상학, 임지영 and 조영표, supervised by 박종연. The final thesis and presentation connect local snow observations with global ocean–atmosphere variability. The study is not presented as sole-authored work.
+A **six-author undergraduate thesis** by Seung-gwan Oh, Nan-yeong Yun, Min-uk Lee, Sang Hak Lee, Ji-yeong Lim and Yeong-pyo Jo, supervised by Jong-Yeon Park. The final thesis and presentation connect local snow observations with global ocean–atmosphere variability. The study is not presented as sole-authored work.
 
 | Research step | Documented in the thesis |
 |---|---|
@@ -238,4 +237,5 @@ Details and machine-readable evidence: [Validation report](VALIDATION.md), [arch
 ---
 
 [한국어 문서](README.ko.md) · [Validation evidence](VALIDATION.md) · [Data and reuse](docs/DATA_AND_REUSE.md)
+
 
